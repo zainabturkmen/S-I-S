@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CV from "../assets/Sadat_CV.pdf";
+import { BiMenuAltLeft } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -30,6 +31,9 @@ const Navbar = () => {
         <a download="Sayed Irfan Sadat CV" href={CV}>
           Download CV
         </a>
+        <button>
+          <BiMenuAltLeft />
+        </button>
       </nav>
     </Wrapper>
   );

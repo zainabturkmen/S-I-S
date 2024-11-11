@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CV from "../assets/Sadat_CV.pdf";
 
 const Navbar = () => {
   return (
@@ -26,7 +27,9 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <button> Download CV</button>
+        <a download="Sayed Irfan Sadat CV" href={CV}>
+          Download CV
+        </a>
       </nav>
     </Wrapper>
   );

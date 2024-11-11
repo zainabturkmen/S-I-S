@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
   const isOpen = true;
@@ -7,6 +8,9 @@ const Sidebar = () => {
     <Wrapper>
       <aside className={`${isOpen ? "sidebar" : "show-sidebar "}`}>
         <h1>Sayed Irfan</h1>
+        <button>
+          <FaTimes />
+        </button>
         <ul>
           <li>
             <a href="#">Home</a>

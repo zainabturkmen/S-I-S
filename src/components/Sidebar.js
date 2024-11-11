@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
-  const isOpen = true;
+  const isOpen = false;
   return (
     <Wrapper>
-      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+      <aside className={`${isOpen ? "sidebar show-sidebar" : " sidebar"}`}>
         <h1>Sayed Irfan</h1>
         <button>
           <FaTimes />

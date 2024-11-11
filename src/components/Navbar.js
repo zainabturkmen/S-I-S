@@ -26,6 +26,7 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
+        <button> Download CV</button>
       </nav>
     </Wrapper>
   );

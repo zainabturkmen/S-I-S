@@ -6,7 +6,8 @@ const Sidebar = () => {
   const isOpen = false;
   return (
     <Wrapper>
-      <aside className={`${isOpen ? "sidebar show-sidebar" : " sidebar"}`}>
+      <aside
+        className={`${isOpen ? "sidebar  show-sidebar" : "  show-sidebar"}`}>
         <h1>Sayed Irfan</h1>
         <button>
           <FaTimes />

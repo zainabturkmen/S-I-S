@@ -6,8 +6,7 @@ const Sidebar = () => {
   const isOpen = false;
   return (
     <Wrapper>
-      <aside
-        className={`${isOpen ? "sidebar  show-sidebar" : "  show-sidebar"}`}>
+      <aside className={`${isOpen ? "sidebar  show-sidebar" : "sidebar"}`}>
         <h1>Sayed Irfan</h1>
         <button>
           <FaTimes />
@@ -49,6 +48,7 @@ const Wrapper = styled.div`
     transform: translate(-100);
     box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
       0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+    /* z-index: -1; */
   }
 
   .show-sidebar {

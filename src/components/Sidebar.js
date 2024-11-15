@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
-  const isOpen = false;
+  const isOpen = true;
   return (
     <Wrapper>
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
@@ -56,6 +56,12 @@ const Wrapper = styled.div`
   .show-sidebar {
     transform: translate(0);
     z-index: 999;
+  }
+
+  .sidebar-header{
+    display: flex;
+    justify-content: space-around;
+
   }
 `;
 

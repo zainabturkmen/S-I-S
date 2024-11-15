@@ -58,14 +58,22 @@ const Wrapper = styled.div`
     z-index: 999;
   }
 
-  .sidebar-header{
+  .sidebar-header {
     display: flex;
     justify-content: space-around;
 
-    h1{
-      color: ;
+    h1 {
+      color: blue;
     }
+  }
 
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
   }
 `;
 

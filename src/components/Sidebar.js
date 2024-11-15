@@ -45,7 +45,7 @@ const Wrapper = styled.div`
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: gray;
+    background-color: white;
     transition: all 0.3s linear;
     transform: translate(-100%);
     box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
@@ -61,6 +61,10 @@ const Wrapper = styled.div`
   .sidebar-header{
     display: flex;
     justify-content: space-around;
+
+    h1{
+      color: ;
+    }
 
   }
 `;

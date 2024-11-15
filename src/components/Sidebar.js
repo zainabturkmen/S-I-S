@@ -6,11 +6,13 @@ const Sidebar = () => {
   const isOpen = false;
   return (
     <Wrapper>
-      <aside className={`${isOpen ? "sidebar  show-sidebar" : "sidebar"}`}>
-        <h1>Sayed Irfan</h1>
-        <button>
-          <FaTimes />
-        </button>
+      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+        <div className="sidebar-header">
+          <h1>Sayed Irfan</h1>
+          <button>
+            <FaTimes />
+          </button>
+        </div>
         <ul>
           <li>
             <a href="#">Home</a>
@@ -45,10 +47,10 @@ const Wrapper = styled.div`
     height: 100%;
     background-color: gray;
     transition: all 0.3s linear;
-    transform: translate(-100);
+    transform: translate(-100%);
     box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
       0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-    /* z-index: -1; */
+    z-index: -1;
   }
 
   .show-sidebar {

@@ -5,17 +5,12 @@ import React from "react";
 // import Projects from "../assets/icons/Project.svg";
 // import Testimonails from "../assets/icons/testimonails.svg";
 // import Phone from "../assets/icons/phone.svg";
-
-import {
-  IoHomeOutline,
-  LuScrollText,
-  GrServices,
-  BsCalendar2Plus,
-  BiCommentCheck,
-    MdOutlinePhone,
-  
-    
-} from "react-icons/io5";
+import { IoHomeOutline } from "react-icons/io5";
+import { LuScrollText } from "react-icons/lu";
+import { GrServices } from "react-icons/gr";
+import { BsCalendar2Plus } from "react-icons/bs";
+import { BiCommentCheck } from "react-icons/bi";
+import { MdOutlinePhone } from "react-icons/md";
 
 export const links = [
   {

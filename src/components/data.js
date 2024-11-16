@@ -1,10 +1,4 @@
 import React from "react";
-// import Home from "../assets/icons/home.svg";
-// import About from "../assets/icons/about.svg";
-// import Services from "../assets/icons/services.svg";
-// import Projects from "../assets/icons/Project.svg";
-// import Testimonails from "../assets/icons/testimonails.svg";
-// import Phone from "../assets/icons/phone.svg";
 import { IoHomeOutline } from "react-icons/io5";
 import { LuScrollText } from "react-icons/lu";
 import { GrServices } from "react-icons/gr";

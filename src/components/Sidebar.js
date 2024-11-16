@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
+import { links } from "./data";
 
 const Sidebar = () => {
   const isOpen = true;

@@ -54,7 +54,7 @@ export const links = [
 export const services = [
   {
     id: 1,
-    icon: <GiCompass />,
+    // icon: <GiCompass />,
     title: "mission",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
   },

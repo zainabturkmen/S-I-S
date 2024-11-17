@@ -31,19 +31,29 @@ const Sidebar = () => {
           })}
         </ul>
         <div className="sidebar-footer">
-          <div className="date">
-            <p>&copy; {currentYear}. All Rights Reserved</p>
-          </div>
-          <div className="links">
-            <a href="#">
-              <GrFacebookOption />
-            </a>
-            <a href="#">
-              <TfiLinkedin />
-            </a>
-            <a href="#">
-              <FaTwitter />
-            </a>
+          <div className="underline"></div>
+          <div className="main-footer">
+            <div className="date">
+              <p>&copy; {currentYear}. All Rights Reserved</p>
+            </div>
+
+            <ul className="links">
+              <li>
+                <a href="#">
+                  <GrFacebookOption />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FaTwitter />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <TfiLinkedin />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </aside>
@@ -132,6 +142,23 @@ const Wrapper = styled.div`
   span {
     padding-right: 0.7em;
     font-size: 1.9em;
+  }
+
+  .underline {
+    width: 100%;
+    color: black;
+  }
+
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 400;
   }
 `;
 

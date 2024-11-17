@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 100%;
     height: 100%;
     background-color: white;
     transition: all 0.3s linear;

@@ -154,7 +154,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
 
   p {

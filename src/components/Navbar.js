@@ -94,9 +94,12 @@ const Wrapper = styled.div`
     background: #fff;
     justify-self: center;
     width: 160px;
-    padding: .9em 0;
+    padding: 0.8em 0;
     font-size: 1.1em;
-    
+    &:hover {
+      color: white;
+      background-color: #4f46e5;
+    }
   }
 `;
 export default Navbar;

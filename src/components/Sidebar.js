@@ -13,46 +13,43 @@ const Sidebar = () => {
   return (
     <Wrapper>
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
-        <div className="sidebar-header">
-          <h1>Sayed Irfan</h1>
-          <button className="times">
-            <LiaTimesSolid />
-          </button>
+        <div>
+          <div className="sidebar-header">
+            <h1>Sayed Irfan</h1>
+            <button className="times">
+              <LiaTimesSolid />
+            </button>
+          </div>
+          <ul>
+            {links.map((link) => {
+              const { id, text, url, icon } = link;
+              return (
+                <li key={id}>
+                  <span>{icon}</span>
+                  <a href={url} className="link">
+                    {text}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <ul>
-          {links.map((link) => {
-            const { id, text, url, icon } = link;
-            return (
-              <li key={id}>
-                <span>{icon}</span>
-                <a href={url}>{text}</a>
-              </li>
-            );
-          })}
-        </ul>
         <div className="sidebar-footer">
-          <div className="underline"></div>
+          <hr className="hr" />
           <div className="main-footer">
             <div className="date">
               <p>&copy; {currentYear}. All Rights Reserved</p>
             </div>
-
             <ul className="links">
-              <li>
-                <a href="#">
-                  <GrFacebookOption />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaTwitter />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <TfiLinkedin />
-                </a>
-              </li>
+              <a href="#" className="social">
+                <GrFacebookOption />
+              </a>
+              <a href="#" className="social">
+                <FaTwitter />
+              </a>
+              <a href="#" className="social">
+                <TfiLinkedin />
+              </a>
             </ul>
           </div>
         </div>
@@ -62,6 +59,11 @@ const Sidebar = () => {
 };
 
 const Wrapper = styled.div`
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .sidebar {
     position: fixed;
     top: 0;
@@ -89,7 +91,7 @@ const Wrapper = styled.div`
 
     h1 {
       font-family: "Edu AU VIC WA NT Pre", cursive;
-      font-weight: 500;
+      font-weight: 600;
       color: blue;
       font-size: 1.8em;
       background: var(
@@ -113,6 +115,9 @@ const Wrapper = styled.div`
     }
   }
 
+  hr {
+    margin: 0 1em;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -130,7 +135,7 @@ const Wrapper = styled.div`
     }
   }
 
-  a {
+  .link {
     text-decoration: none;
     color: #000;
     font-size: 1.5em;
@@ -144,21 +149,32 @@ const Wrapper = styled.div`
     font-size: 1.9em;
   }
 
-  .underline {
-    width: 100%;
-    color: black;
-  }
-
   .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: .5em;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
+    padding-top: 0.6em;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+
+    .social {
+      background-color: #2c277f;
+      color: white;
+      padding: 0.3em 0.5em 0em 0.5em;
+      font-size: 1em;
+      border-radius: 3em;
+    }
   }
 `;
 

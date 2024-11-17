@@ -4,6 +4,8 @@ import { LiaTimesSolid } from "react-icons/lia";
 import { links } from "./data";
 
 const Sidebar = () => {
+  const currentYear = new Date().getFullYear();
+
   const isOpen = true;
   return (
     <Wrapper>
@@ -26,6 +28,11 @@ const Sidebar = () => {
           })}
         </ul>
       </aside>
+      <div className="sidebar-footer">
+        <div className="date">
+          <h1>&copy; {currentYear}. All Rights Reserved</h1>
+        </div>
+      </div>
     </Wrapper>
   );
 };

@@ -27,12 +27,13 @@ const Sidebar = () => {
             );
           })}
         </ul>
-      </aside>
-      <div className="sidebar-footer">
-        <div className="date">
-          <h1>&copy; {currentYear}. All Rights Reserved</h1>
+        <div className="sidebar-footer">
+          <div className="date">
+            <p>&copy; {currentYear}. All Rights Reserved</p>
+          </div>
+          <div className="links"></div>
         </div>
-      </div>
+      </aside>
     </Wrapper>
   );
 };

@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { LiaTimesSolid } from "react-icons/lia";
 import { links } from "./data";
+import { GrFacebookOption } from "react-icons/gr";
+import { TfiLinkedin } from "react-icons/tfi";
+import { FaTwitter } from "react-icons/fa";
 
 const Sidebar = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +34,17 @@ const Sidebar = () => {
           <div className="date">
             <p>&copy; {currentYear}. All Rights Reserved</p>
           </div>
-          <div className="links"></div>
+          <div className="links">
+            <a href="#">
+              <GrFacebookOption />
+            </a>
+            <a href="#">
+              <TfiLinkedin />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       </aside>
     </Wrapper>

@@ -15,7 +15,7 @@ import {
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Sidebar />
       <Hero />
       <About />

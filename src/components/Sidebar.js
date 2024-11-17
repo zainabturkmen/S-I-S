@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
     background-color: white;
     transition: all 0.3s linear;
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
       font-family: "Edu AU VIC WA NT Pre", cursive;
       font-weight: 500;
       color: blue;
-      font-size: 2em;
+      font-size: 1.8em;
       background: var(
         --Primary-Color,
         linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)

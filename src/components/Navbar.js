@@ -73,7 +73,7 @@ const Wrapper = styled.div`
 
   h1 {
     font-family: "Edu AU VIC WA NT Pre", cursive;
-    font-weight: 600;
+    font-weight: 550;
     color: blue;
     font-size: 1.8em;
     background: var(
@@ -96,6 +96,7 @@ const Wrapper = styled.div`
     width: 160px;
     padding: 0.8em 0;
     font-size: 1.1em;
+    transition: all 0.3s linear;
     &:hover {
       color: white;
       background-color: #4f46e5;

@@ -28,12 +28,14 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <a download="Sayed Irfan Sadat CV" href={CV} className="cv">
-          Download CV
-        </a>
-        <button>
-          <BiMenuAltLeft />
-        </button>
+        <div className="btn-container">
+          <a download="Sayed Irfan Sadat CV" href={CV} className="cv">
+            Download CV
+          </a>
+          <button>
+            <BiMenuAltLeft />
+          </button>
+        </div>
       </nav>
     </Wrapper>
   );
@@ -74,7 +76,7 @@ const Wrapper = styled.div`
 
   h1 {
     font-family: "Edu AU VIC WA NT Pre", cursive;
-    font-weight: 550;
+    font-weight: 500;
     color: blue;
     font-size: 1.8em;
     background: var(
@@ -95,7 +97,7 @@ const Wrapper = styled.div`
     background: #fff;
     justify-self: center;
     width: 160px;
-    padding: 0.8em 0;
+    padding: 0.8em 1em;
     font-size: 1.1em;
     transition: all 0.3s linear;
     &:hover {
@@ -115,14 +117,46 @@ const Wrapper = styled.div`
 
     .cv {
       width: 150px;
-      padding: 0.5em 0;
+      padding: 0.5em 0.9em;
       font-size: 1em;
     }
   }
 
   @media (max-width: 1000px) {
-    background-color: blue;
+    nav {
+      justify-content: space-between;
+      margin: 0 2em;
+    }
+    ul {
+      display: none;
+    }
 
+    h1 {
+      font-size: 2em;
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      font-size: 3.6em;
+      margin-top: 0.1em;
+      color: #4f46e5;
+      &:hover {
+        color: black;
+      }
+    }
+
+    .cv {
+      font-size: 1.3em;
+      border-radius: 3em;
+    }
   }
 `;
 export default Navbar;

@@ -116,13 +116,14 @@ const Wrapper = styled.div`
   }
 
   hr {
-    margin: 0 1em;
+    margin: -1em 1em;
   }
   ul {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
     margin-top: 2em;
+    /* margin-bottom: 3em; */
   }
 
   li {
@@ -149,18 +150,22 @@ const Wrapper = styled.div`
     font-size: 1.9em;
   }
 
+  .sidebar-footer {
+    margin-bottom: -.8em;
+  }
   .main-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 2.5em;
     align-items: center;
     padding-bottom: 0.5em;
   }
 
   p {
-    font-size: 1.1em;
+    font-size: 0.7em;
     font-weight: 400;
-    padding-top: 0.6em;
+    padding-top: 0.8em;
   }
 
   .links {
@@ -172,7 +177,7 @@ const Wrapper = styled.div`
       background-color: #2c277f;
       color: white;
       padding: 0.3em 0.5em 0em 0.5em;
-      font-size: 1em;
+      font-size: 0.6em;
       border-radius: 3em;
     }
   }

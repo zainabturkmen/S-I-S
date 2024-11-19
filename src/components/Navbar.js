@@ -57,17 +57,18 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3em;
+  }
 
-    li {
-      list-style: none;
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.3em;
-        &:hover {
-          color: #4f46e5;
-        }
-      }
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    &:hover {
+      color: #4f46e5;
     }
   }
 
@@ -101,6 +102,27 @@ const Wrapper = styled.div`
       color: white;
       background-color: #4f46e5;
     }
+  }
+
+  @media (max-width: 1300px) {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    a {
+      font-size: 1em;
+    }
+
+    .cv {
+      width: 150px;
+      padding: 0.5em 0;
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    background-color: blue;
+
   }
 `;
 export default Navbar;

@@ -176,12 +176,6 @@ const Wrapper = styled.div`
       border-radius: 3em;
     }
   }
-
-  @media (min-width: 1000px) {
-    aside{
-      background-color: red;
-    }
-   }
 `;
 
 export default Sidebar;

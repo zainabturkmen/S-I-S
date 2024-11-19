@@ -51,6 +51,7 @@ const Wrapper = styled.div`
 
   button {
     display: none;
+    cursor: pointer;
   }
 
   ul {

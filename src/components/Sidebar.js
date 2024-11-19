@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 const Sidebar = () => {
   const currentYear = new Date().getFullYear();
 
-  const isOpen = false;
+  const isOpen = true;
   return (
     <Wrapper>
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
@@ -176,6 +176,12 @@ const Wrapper = styled.div`
       border-radius: 3em;
     }
   }
+
+  @media (min-width: 1000px) {
+    aside{
+      background-color: red;
+    }
+   }
 `;
 
 export default Sidebar;

@@ -158,5 +158,24 @@ const Wrapper = styled.div`
       border-radius: 3em;
     }
   }
+
+  @media (max-width: 600px) {
+    nav {
+      margin: 0 .5em;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+
+    button {
+      font-size: 2.2em;
+    }
+
+    .cv {
+      font-size: 0.8em;
+      width: 90px;
+    }
+  }
 `;
 export default Navbar;

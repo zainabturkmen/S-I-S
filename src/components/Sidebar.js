@@ -9,7 +9,7 @@ import { FaTwitter } from "react-icons/fa";
 const Sidebar = () => {
   const currentYear = new Date().getFullYear();
 
-  const isOpen = false;
+  const isOpen = true;
   return (
     <Wrapper>
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
@@ -151,7 +151,7 @@ const Wrapper = styled.div`
   }
 
   .sidebar-footer {
-    margin-bottom: -.8em;
+    margin-bottom: -0.8em;
   }
   .main-footer {
     display: flex;
@@ -176,7 +176,7 @@ const Wrapper = styled.div`
     .social {
       background-color: #2c277f;
       color: white;
-      padding: 0.3em 0.5em 0em 0.5em;
+      padding: 0.45em 0.5em 0em 0.5em;
       font-size: 0.6em;
       border-radius: 3em;
     }

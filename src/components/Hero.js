@@ -110,8 +110,15 @@ const Wrapper = styled.div`
     }
   }
 
-  img{
+  img {
     width: 100%;
+    background: var(
+      --Primary-Color,
+      linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
+    );
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
   }
 `;
 

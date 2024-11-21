@@ -110,13 +110,27 @@ const Wrapper = styled.div`
     }
   }
 
+  .bottom{
+    
+  } 
+  
   img {
     width: 100%;
     /* background: var(
       --Primary-Color,
       linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
     ); */
- 
+    border-radius: 2px;
+  }
+
+  .bottom:before {
+    content: "";
+    background: linear-gradient(
+      152deg,
+      rgba(79, 70, 229, 0.5) 8.11%,
+      #2c277f 91.89%
+    );
+    width: 400px;
   }
 `;
 

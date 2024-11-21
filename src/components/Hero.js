@@ -117,20 +117,16 @@ const Wrapper = styled.div`
 
   img {
     width: 100%;
-    /* background: var(
-      --Primary-Color,
-      linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
-    ); */
     border-radius: 2px;
   }
 
   .bottom:before {
     content: "";
     position: absolute;
-    top: 3em;
+    top: 5.5em;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80.5%;
     background: linear-gradient(
       152deg,
       rgba(79, 70, 229, 0.5) 8.11%,

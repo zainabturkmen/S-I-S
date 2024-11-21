@@ -6,17 +6,16 @@ import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaTwitter } from "react-icons/fa";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleSidebar, isOpen }) => {
   const currentYear = new Date().getFullYear();
 
-  const isOpen = true;
   return (
     <Wrapper>
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
         <div>
           <div className="sidebar-header">
             <h1>Sayed Irfan</h1>
-            <button className="times">
+            <button className="times" onClick={toggleSidebar}>
               <LiaTimesSolid />
             </button>
           </div>
@@ -26,7 +25,7 @@ const Sidebar = () => {
               return (
                 <li key={id}>
                   <span>{icon}</span>
-                  <a href={url} className="link">
+                  <a href={url} className="link" onClick={toggleSidebar}>
                     {text}
                   </a>
                 </li>

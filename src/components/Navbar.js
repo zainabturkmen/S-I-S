@@ -3,7 +3,7 @@ import styled from "styled-components";
 import CV from "../assets/Sadat_CV.pdf";
 import { BiMenuAltLeft } from "react-icons/bi";
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
     <Wrapper>
       <nav>
@@ -33,7 +33,7 @@ const Navbar = () => {
             Download CV
           </a>
           <button>
-            <BiMenuAltLeft />
+            <BiMenuAltLeft onClick={toggleSidebar} />
           </button>
         </div>
       </nav>
@@ -162,7 +162,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 600px) {
     nav {
-      margin: 0 .5em;
+      margin: 0 0.5em;
     }
 
     h1 {

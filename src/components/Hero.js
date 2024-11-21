@@ -163,9 +163,9 @@ const Wrapper = styled.div`
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);
     position: absolute;
-    top: 66%; /* Adjust this to position relative to the image */
-    left: 43%; /* Centers relative to the container */
-    transform: translate(-50%, -50%); /* Centers the element exactly */
+    top: 66%; 
+    left: 43%; 
+    transform: translate(-50%, -50%); 
     z-index: -1;
   }
 `;

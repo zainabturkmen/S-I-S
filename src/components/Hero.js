@@ -30,10 +30,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="bottom">
-          <div className="img-container">
-            <img src={image} />
+          <div className="rec">
+            <div className="img-container">
+              <img src={image} />
+            </div>
+            {/* <div className="rec"></div> */}
           </div>
-          <div className="rec"></div>
         </div>
       </div>
     </Wrapper>
@@ -148,8 +150,19 @@ const Wrapper = styled.div`
     border-radius: 2px;
   }
 
-  .rec {
-    /* width: 380px;
+  .bottom:before {
+    content: "";
+    position: absolute;
+    width: 380px;
+    top: 8em;
+    left: 4em;
+    height: 77%;
+    border-radius: 2px;
+    border: 5px solid var(--Primary-Color, #4f46e5);
+  }
+
+  /* .rec { */
+  /* width: 380px;
     height: 380px;
     flex-shrink: 0;
     border-radius: 2px;
@@ -158,16 +171,16 @@ const Wrapper = styled.div`
     top: 36.5em;
     z-index: -1;
     left: 1.2em; */
-    width: 380px;
+  /* width: 380px;
     height: 380px;
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);
     position: absolute;
-    top: 66%; 
-    left: 43%; 
-    transform: translate(-50%, -50%); 
-    z-index: -1;
-  }
+    top: 66%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    z-index: -1; */
+  /* } */
 `;
 
 export default Hero;

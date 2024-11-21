@@ -30,7 +30,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="bottom">
-          <img src={image} />
+          <div className="img-container">
+            <img src={image} />
+          </div>
+          <div className="rec"></div>
         </div>
       </div>
     </Wrapper>
@@ -111,21 +114,29 @@ const Wrapper = styled.div`
   }
 
   .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .img-container {
     position: relative;
     display: inline-block;
   }
 
   img {
-    width: 100%;
+    width: 470px;
     border-radius: 2px;
   }
 
-  .bottom:before {
+  .img-container:before {
     content: "";
     position: absolute;
     top: 5.5em;
-    left: 0;
-    width: 100%;
+    left: 2.9em;
+    width: 85%;
     height: 80.5%;
     background: linear-gradient(
       152deg,
@@ -134,6 +145,19 @@ const Wrapper = styled.div`
     );
     z-index: -1;
     pointer-events: none;
+    border-radius: 2px;
+  }
+
+  .rec {
+    width: 380px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 5px solid var(--Primary-Color, #4f46e5);
+    position: absolute;
+    top: 36.5em;
+    z-index: -1;
+    left: 1.2em;
   }
 `;
 

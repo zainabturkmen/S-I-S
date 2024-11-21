@@ -90,7 +90,7 @@ const Wrapper = styled.div`
 
     h1 {
       font-family: "Edu AU VIC WA NT Pre", cursive;
-      font-weight: 600;
+      font-weight: 500;
       color: blue;
       font-size: 1.8em;
       background: var(

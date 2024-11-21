@@ -110,10 +110,11 @@ const Wrapper = styled.div`
     }
   }
 
-  .bottom{
-    
-  } 
-  
+  .bottom {
+    position: relative;
+    display: inline-block;
+  }
+
   img {
     width: 100%;
     /* background: var(
@@ -125,12 +126,18 @@ const Wrapper = styled.div`
 
   .bottom:before {
     content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
       152deg,
       rgba(79, 70, 229, 0.5) 8.11%,
       #2c277f 91.89%
     );
-    width: 400px;
+    z-index: -1;
+    pointer-events: none;
   }
 `;
 

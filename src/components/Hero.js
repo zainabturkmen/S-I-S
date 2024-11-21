@@ -149,7 +149,7 @@ const Wrapper = styled.div`
   }
 
   .rec {
-    width: 380px;
+    /* width: 380px;
     height: 380px;
     flex-shrink: 0;
     border-radius: 2px;
@@ -157,7 +157,16 @@ const Wrapper = styled.div`
     position: absolute;
     top: 36.5em;
     z-index: -1;
-    left: 1.2em;
+    left: 1.2em; */
+    width: 380px;
+    height: 380px;
+    border-radius: 2px;
+    border: 5px solid var(--Primary-Color, #4f46e5);
+    position: absolute;
+    top: 66%; /* Adjust this to position relative to the image */
+    left: 43%; /* Centers relative to the container */
+    transform: translate(-50%, -50%); /* Centers the element exactly */
+    z-index: -1;
   }
 `;
 

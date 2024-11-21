@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LuArrowUpRight } from "react-icons/lu";
+import image from "../assets/image.png";
 
 const Hero = () => {
   return (
@@ -17,8 +18,10 @@ const Hero = () => {
             Motion Graphics
           </h3>
           <div className="bt-div">
-            <a href="#">Contact Me</a>
-            <a href="#">
+            <a href="#" className="contact">
+              Contact Me
+            </a>
+            <a href="#" className="portfolio">
               View Portfolios{" "}
               <span>
                 <LuArrowUpRight />
@@ -26,7 +29,9 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="bottom"></div>
+        <div className="bottom">
+          <img src={image} />
+        </div>
       </div>
     </Wrapper>
   );
@@ -79,12 +84,35 @@ const Wrapper = styled.div`
     margin-top: -0.5em;
   }
 
-  .bt-div{
+  .bt-div {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1.5em;
   }
 
- 
+  .contact,
+  .portfolio {
+    text-decoration: none;
+    color: #000;
+    margin-top: 0.5em;
+    font-family: Inter;
+  }
+
+  .contact {
+    border: 1px solid #4f46e5;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: #4f46e5;
+      color: #fff;
+    }
+  }
+
+  img{
+    width: 400px;
+  }
 `;
 
 export default Hero;

@@ -176,6 +176,8 @@ const Wrapper = styled.div`
     .cv {
       font-size: 0.8em;
       width: 90px;
+      border: 1px solid #4f46e5;
+      padding: .6em 1em;
     }
   }
 `;

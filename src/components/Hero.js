@@ -1,9 +1,90 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import { LuArrowUpRight } from "react-icons/lu";
 
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+    <Wrapper>
+      <div className="container">
+        <div className="top">
+          <p className="hello">Hello 👋</p>
+          <h1>
+            I’am Sayed Irfan Sadat <br /> <span>3D Designer</span>
+          </h1>
+          <h3>
+            Transforming Ideas into Engaging Visual Experiences, Crafting
+            Immersive 3D Visuals and Engaging Graphic Designs, Creating Dynamic
+            Motion Graphics
+          </h3>
+          <div className="bt-div">
+            <a href="#">Contact Me</a>
+            <a href="#">
+              View Portfolios{" "}
+              <span>
+                <LuArrowUpRight />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div className="bottom"></div>
+      </div>
+    </Wrapper>
+  );
+};
 
-export default Hero
+const Wrapper = styled.div`
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em 3em;
+  }
+
+  .hello {
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #4f46e5;
+    border-radius: 50%;
+    width: 62px;
+    padding: 0.3em 0;
+    margin-bottom: 0;
+  }
+  h1 {
+    margin-top: 0.6em;
+    color: #0b0c0c;
+    text-align: center;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 510;
+    line-height: 1.5em; /* 162.5% */
+    word-spacing: 2px;
+    width: 364px;
+  }
+
+  span {
+    color: #4f46e5;
+  }
+
+  h3 {
+    color: #323433;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 201%; /* 24.12px */
+    width: 460px;
+    margin-top: -0.5em;
+  }
+
+  .bt-div{
+    display: flex;
+    gap: 1.5em;
+  }
+
+ 
+`;
+
+export default Hero;

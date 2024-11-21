@@ -111,7 +111,7 @@ const Wrapper = styled.div`
   }
 
   img{
-    width: 400px;
+    width: 100%;
   }
 `;
 

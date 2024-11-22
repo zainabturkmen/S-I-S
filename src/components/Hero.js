@@ -219,8 +219,6 @@ const Wrapper = styled.div`
       );
       padding: 0.3em 0.4em 0 0.4em;
       border-radius: 7px;
-      /* width: 20px; */
-      /* height: 20px; */
     }
   }
 
@@ -242,6 +240,20 @@ const Wrapper = styled.div`
 
     .bottom {
       margin-right: 2em;
+      flex-direction: row;
+    }
+
+    .follow {
+      flex-direction: column;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    .line {
+      width: 1px;
+      height: 3em;
     }
   }
 

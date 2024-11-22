@@ -184,7 +184,7 @@ const Wrapper = styled.div`
     margin-right: 2em;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1500px) {
     h1,
     h3 {
       text-align: start;
@@ -201,13 +201,31 @@ const Wrapper = styled.div`
     }
 
     .contact,
-  .portfolio{
-    font-size: 1em;
-  }
-  .contact{
-    padding: .8em 1.5em;
-  }
+    .portfolio {
+      font-size: 1em;
+    }
+    .contact {
+      padding: 0.8em 1.5em;
+    }
 
+    img {
+      width: 400px;
+      border-radius: 2px;
+    }
+
+    .img-container:before {
+      top: 5.1em;
+      left: 2em;
+      width: 88%;
+      height: 78.9%;
+    }
+
+    .img-container:after {
+      width: 340px;
+      top: 7em;
+      left: 0em;
+      height: 75%;
+    }
   }
 `;
 

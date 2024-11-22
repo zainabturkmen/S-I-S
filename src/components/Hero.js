@@ -202,6 +202,7 @@ const Wrapper = styled.div`
     width: 3em;
     height: 1px;
     background-color: #4f46e5;
+    margin-left: 1em;
   } 
   
   @media (min-width: 1000px) {

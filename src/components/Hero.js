@@ -295,7 +295,6 @@ const Wrapper = styled.div`
     h3 {
       font-size: 1em;
       width: 500px;
-      padding-top: -1em;
     }
 
     .contact,

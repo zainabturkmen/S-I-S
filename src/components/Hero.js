@@ -6,7 +6,6 @@ import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaTwitter } from "react-icons/fa";
 
-
 const Hero = () => {
   return (
     <Wrapper>
@@ -38,7 +37,7 @@ const Hero = () => {
             <img src={image} />
           </div>
           <div className="follow">
-            <p>Follow me on: </p>
+            <p className="p">Follow me on: </p>
             <div className="line"></div>
             <ul className="links">
               <a href="#" className="social">
@@ -187,8 +186,9 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
   }
-  p {
+  .p {
     background: var(
       --Primary-Color,
       linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
@@ -198,13 +198,32 @@ const Wrapper = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  .line{
+  .line {
     width: 3em;
     height: 1px;
     background-color: #4f46e5;
-    margin-left: 1em;
-  } 
-  
+    margin-left: 2em;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    a {
+      color: #fff;
+      background: var(
+        --Primary-Color,
+        linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
+      );
+      padding: 0.3em 0.4em 0 0.4em;
+      border-radius: 7px;
+      /* width: 20px; */
+      /* height: 20px; */
+    }
+  }
+
   @media (min-width: 1000px) {
     .container {
       display: flex;

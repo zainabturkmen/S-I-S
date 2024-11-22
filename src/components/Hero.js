@@ -182,6 +182,12 @@ const Wrapper = styled.div`
     z-index: -1;
   }
 
+  .follow{
+    display: flex;
+    flex-direction: row;
+  } 
+  
+  
   @media (min-width: 1000px) {
     .container {
       display: flex;

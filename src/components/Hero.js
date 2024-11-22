@@ -187,6 +187,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    margin-right: 1em;
   }
   .p {
     background: var(

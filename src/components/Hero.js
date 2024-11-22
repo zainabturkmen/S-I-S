@@ -247,6 +247,9 @@ const Wrapper = styled.div`
       flex-direction: column;
     }
 
+    .p{
+      text-orientation: sideways;
+    }
     ul {
       flex-direction: column;
     }

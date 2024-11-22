@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { LuArrowUpRight } from "react-icons/lu";
 import image from "../assets/image.png";
+import { GrFacebookOption } from "react-icons/gr";
+import { TfiLinkedin } from "react-icons/tfi";
+import { FaTwitter } from "react-icons/fa";
+
 
 const Hero = () => {
   return (
@@ -33,7 +37,21 @@ const Hero = () => {
           <div className="img-container">
             <img src={image} />
           </div>
-          <div className="follow"></div>
+          <div className="follow">
+            <p>follow</p>
+            <hr />
+            <ul className="links">
+              <a href="#" className="social">
+                <GrFacebookOption />
+              </a>
+              <a href="#" className="social">
+                <FaTwitter />
+              </a>
+              <a href="#" className="social">
+                <TfiLinkedin />
+              </a>
+            </ul>
+          </div>
         </div>
       </div>
     </Wrapper>

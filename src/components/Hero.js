@@ -9,6 +9,13 @@ import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 
 
 const Hero = () => {
+
+  const [typeEffect] = useTypewriter({
+    words: ["3D Designer", "Creative Graphic Designer", "Motion Designer", "Social Media Expert"],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 90,
+  });
   return (
     <Wrapper>
       <div className="container">

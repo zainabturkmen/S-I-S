@@ -7,11 +7,14 @@ import { TfiLinkedin } from "react-icons/tfi";
 import { FaTwitter } from "react-icons/fa";
 import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 
-
 const Hero = () => {
-
   const [typeEffect] = useTypewriter({
-    words: ["3D Designer", "Creative Graphic Designer", "Motion Designer", "Social Media Expert"],
+    words: [
+      "3D Designer",
+      "Graphic Designer",
+      "Motion Designer",
+      "Social Media Expert",
+    ],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 90,
@@ -22,7 +25,11 @@ const Hero = () => {
         <div className="top">
           <p className="hello">Hello 👋</p>
           <h1>
-            I’am Sayed Irfan Sadat <br /> <span>3D Designer</span>
+            I’am Sayed Irfan Sadat <br /> <span>{typeEffect}</span>
+            <span
+              style={{ fontSize: ".8em", color: "black", fontWeight: "300" }}>
+              <Cursor />
+            </span>
           </h1>
           <h3>
             Transforming Ideas into Engaging Visual Experiences, Crafting
@@ -259,7 +266,7 @@ const Wrapper = styled.div`
       margin-top: 6em;
     }
 
-    .p{
+    .p {
       writing-mode: vertical-lr;
     }
     ul {
@@ -270,7 +277,7 @@ const Wrapper = styled.div`
     .line {
       width: 1px;
       height: 3em;
-      margin-left: -.1em;
+      margin-left: -0.1em;
     }
   }
 
@@ -288,6 +295,7 @@ const Wrapper = styled.div`
     h3 {
       font-size: 1em;
       width: 500px;
+      padding-top: -1em;
     }
 
     .contact,

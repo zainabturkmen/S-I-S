@@ -199,6 +199,15 @@ const Wrapper = styled.div`
       font-size: 1em;
       width: 500px;
     }
+
+    .contact,
+  .portfolio{
+    font-size: 1em;
+  }
+  .contact{
+    padding: .8em 1.5em;
+  }
+
   }
 `;
 

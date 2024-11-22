@@ -30,11 +30,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="bottom">
-          <div className="rec">
-            <div className="img-container">
-              <img src={image} />
-            </div>
-            {/* <div className="rec"></div> */}
+          <div className="img-container">
+            <img src={image} />
           </div>
         </div>
       </div>
@@ -82,10 +79,10 @@ const Wrapper = styled.div`
     color: #323433;
     text-align: center;
     font-family: Inter;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 400;
     line-height: 201%; /* 24.12px */
-    width: 460px;
+    width: 390px;
     margin-top: -0.5em;
   }
 
@@ -102,6 +99,7 @@ const Wrapper = styled.div`
     color: #000;
     margin-top: 0.5em;
     font-family: Inter;
+    font-size: .9em;
   }
 
   .contact {
@@ -121,6 +119,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-left: .5em;
   }
 
   .img-container {
@@ -129,17 +128,17 @@ const Wrapper = styled.div`
   }
 
   img {
-    width: 470px;
+    width: 360px;
     border-radius: 2px;
   }
 
   .img-container:before {
     content: "";
     position: absolute;
-    top: 5.5em;
-    left: 2.9em;
-    width: 85%;
-    height: 80.5%;
+    top: 5.1em;
+    left: 2em;
+    width: 88%;
+    height: 76.8%;
     background: linear-gradient(
       152deg,
       rgba(79, 70, 229, 0.5) 8.11%,
@@ -150,37 +149,17 @@ const Wrapper = styled.div`
     border-radius: 2px;
   }
 
-  .bottom:before {
+  .img-container:after {
     content: "";
     position: absolute;
-    width: 380px;
-    top: 8em;
-    left: 4em;
-    height: 77%;
+    width: 315px;
+    top: 7em;
+    left: 0em;
+    height: 73%;
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);
-  }
-
-  /* .rec { */
-  /* width: 380px;
-    height: 380px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    border: 5px solid var(--Primary-Color, #4f46e5);
-    position: absolute;
-    top: 36.5em;
     z-index: -1;
-    left: 1.2em; */
-  /* width: 380px;
-    height: 380px;
-    border-radius: 2px;
-    border: 5px solid var(--Primary-Color, #4f46e5);
-    position: absolute;
-    top: 66%;
-    left: 43%;
-    transform: translate(-50%, -50%);
-    z-index: -1; */
-  /* } */
+  }
 `;
 
 export default Hero;

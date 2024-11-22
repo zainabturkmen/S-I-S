@@ -245,18 +245,22 @@ const Wrapper = styled.div`
 
     .follow {
       flex-direction: column;
+      gap: 1em;
+      margin-top: 6em;
     }
 
     .p{
-      text-orientation: sideways;
+      writing-mode: vertical-lr;
     }
     ul {
       flex-direction: column;
+      margin-left: -2em;
     }
 
     .line {
       width: 1px;
       height: 3em;
+      margin-left: -.1em;
     }
   }
 

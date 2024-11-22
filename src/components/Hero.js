@@ -142,7 +142,6 @@ const Wrapper = styled.div`
     padding-bottom: 2em;
   }
 
- 
   .img-container {
     position: relative;
     display: inline-block;
@@ -239,6 +238,10 @@ const Wrapper = styled.div`
     h1,
     h3 {
       text-align: start;
+    }
+
+    .bottom {
+      margin-right: 2em;
     }
   }
 

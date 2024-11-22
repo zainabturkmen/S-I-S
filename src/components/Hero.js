@@ -38,7 +38,7 @@ const Hero = () => {
             <img src={image} />
           </div>
           <div className="follow">
-            <p>follow</p>
+            <p>Follow me on: </p>
             <hr />
             <ul className="links">
               <a href="#" className="social">

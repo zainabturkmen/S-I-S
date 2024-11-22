@@ -40,6 +40,7 @@ const Hero = () => {
 };
 
 const Wrapper = styled.div`
+margin: 2em 0;
   .top {
     display: flex;
     flex-direction: column;
@@ -120,6 +121,7 @@ const Wrapper = styled.div`
     align-items: center;
     position: relative;
     margin-left: .5em;
+    padding-bottom: 2em;
   }
 
   .img-container {

@@ -33,6 +33,7 @@ const Hero = () => {
           <div className="img-container">
             <img src={image} />
           </div>
+          <div className="follow"></div>
         </div>
       </div>
     </Wrapper>

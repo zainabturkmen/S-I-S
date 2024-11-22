@@ -40,7 +40,7 @@ const Hero = () => {
 };
 
 const Wrapper = styled.div`
-margin: 2em 0;
+  margin: 2em 0;
   .top {
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ margin: 2em 0;
     color: #323433;
     text-align: center;
     font-family: Inter;
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 400;
     line-height: 201%; /* 24.12px */
     width: 390px;
@@ -100,7 +100,7 @@ margin: 2em 0;
     color: #000;
     margin-top: 0.5em;
     font-family: Inter;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .contact {
@@ -120,7 +120,7 @@ margin: 2em 0;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: .5em;
+    margin-left: 0.5em;
     padding-bottom: 2em;
   }
 
@@ -161,6 +161,44 @@ margin: 2em 0;
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);
     z-index: -1;
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .top {
+      align-items: start;
+    }
+
+    h1,
+    h3 {
+      text-align: start;
+    }
+  }
+
+  .bottom {
+    margin-right: 2em;
+  }
+
+  @media (min-width: 1000px) {
+    h1,
+    h3 {
+      text-align: start;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      width: 500px;
+    }
+
+    h3 {
+      font-size: 1em;
+      width: 500px;
+    }
   }
 `;
 

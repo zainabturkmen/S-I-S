@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
           <div className="follow">
             <p>Follow me on: </p>
-            <hr  className="line"/>
+            <div className="line"></div>
             <ul className="links">
               <a href="#" className="social">
                 <GrFacebookOption />
@@ -185,17 +185,25 @@ const Wrapper = styled.div`
   .follow {
     display: flex;
     flex-direction: row;
-    p {
-      background: var(
-        --Primary-Color,
-        linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    background: var(
+      --Primary-Color,
+      linear-gradient(90deg, #4f46e5 0%, #2c277f 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
+  .line{
+    width: 3em;
+    height: 1px;
+    background-color: #4f46e5;
+  } 
+  
   @media (min-width: 1000px) {
     .container {
       display: flex;

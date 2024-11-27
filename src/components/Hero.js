@@ -74,6 +74,14 @@ const Hero = () => {
           <h1 className="number">80+</h1>
           <p className="client">Satisfied clients</p>
         </div>
+        <div className="content">
+          <h1 className="number">80+</h1>
+          <p className="client">Satisfied clients</p>
+        </div>
+        <div className="content">
+          <h1 className="number">80+</h1>
+          <p className="client">Satisfied clients</p>
+        </div>
       </div>
     </Wrapper>
   );

@@ -48,7 +48,17 @@ export const links = [
 export const services = [
   {
     id: 1,
-    number: "mission",
-    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi",
+    number: "100+",
+    text: "Satisfied clients",
+  },
+  {
+    id: 2,
+    number: "99+",
+    text: "Reviews given",
+  },
+  {
+    id: 1,
+    number: "200+",
+    text: "Projects completed",
   },
 ];

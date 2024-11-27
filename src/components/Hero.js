@@ -320,6 +320,14 @@ const Wrapper = styled.div`
       height: 3em;
       margin-left: -0.1em;
     }
+
+    .bottom-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1em;
+    }
   }
 
   @media (min-width: 1500px) {

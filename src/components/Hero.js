@@ -254,17 +254,18 @@ const Wrapper = styled.div`
   }
 
   .content {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0; */
     text-align: center;
+    margin-top: 2em;
   }
 
   .number {
     margin-bottom: -0.5em;
     color: #4f46e5;
+    font-size: 30px;
+  }
+
+  .client {
+    font-size: 28px;
   }
 
   @media (min-width: 1000px) {

@@ -325,7 +325,7 @@ const Wrapper = styled.div`
       justify-content: space-around;
       align-items: center;
       margin-top: 1em;
-      max-width: fit-content;
+      max-width: 900px;
     }
 
     .content {
@@ -334,10 +334,10 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: sta;
     }
     .number {
       font-size: 34px;
+      text-align: start;
     }
 
     .client {

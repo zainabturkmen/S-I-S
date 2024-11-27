@@ -53,7 +53,7 @@ export const services = [
   },
   {
     id: 2,
-    number: "99+",
+    number: "150+",
     text: "Reviews given",
   },
   {

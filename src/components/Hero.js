@@ -80,8 +80,6 @@ const Hero = () => {
             </div>
           );
         })}
-
-
       </div>
     </Wrapper>
   );
@@ -330,13 +328,13 @@ const Wrapper = styled.div`
     }
     .number {
       text-align: start;
+      font-size: 30px;
+    }
 
-    font-size: 30px;
-  }
-
-  .client {
-    font-size: 20px;
-  }
+    .client {
+      font-size: 20px;
+      text-align: start;
+    }
   }
 
   @media (min-width: 1500px) {

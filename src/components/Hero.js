@@ -6,6 +6,7 @@ import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaTwitter } from "react-icons/fa";
 import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
+import { services } from "./data";
 
 const Hero = () => {
   const [typeEffect] = useTypewriter({
@@ -70,18 +71,17 @@ const Hero = () => {
         </div>
       </div>
       <div className="bottom-container">
-        <div className="content">
-          <h1 className="number">80+</h1>
-          <p className="client">Satisfied clients</p>
-        </div>
-        <div className="content">
-          <h1 className="number">80+</h1>
-          <p className="client">Satisfied clients</p>
-        </div>
-        <div className="content">
-          <h1 className="number">80+</h1>
-          <p className="client">Satisfied clients</p>
-        </div>
+        {services.map((service) => {
+          const { id, number, text } = service;
+          return (
+            <div className="content" key={id}>
+              <h1 className="number">{number}</h1>
+              <p className="client">{text} </p>
+            </div>
+          );
+        })}
+
+
       </div>
     </Wrapper>
   );
@@ -258,7 +258,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2em;
   }
 
   .content {
@@ -274,6 +273,7 @@ const Wrapper = styled.div`
 
   .client {
     font-size: 28px;
+    text-align: center;
   }
 
   @media (min-width: 1000px) {

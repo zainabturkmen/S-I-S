@@ -250,7 +250,7 @@ const Wrapper = styled.div`
       border-radius: 7px;
     }
   }
-
+/* 
   .bottom-container {
     display: flex;
     flex-direction: column;
@@ -272,7 +272,7 @@ const Wrapper = styled.div`
   .client {
     font-size: 28px;
     text-align: center;
-  }
+  } */
 
   @media (min-width: 1000px) {
     .container {
@@ -322,12 +322,10 @@ const Wrapper = styled.div`
     .bottom-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      margin-top: 1em;
-      max-width: 900px;
     }
-
+/* 
     .content {
       margin-top: 2em;
       display: flex;
@@ -342,7 +340,7 @@ const Wrapper = styled.div`
 
     .client {
       font-size: 20px;
-    }
+    } */
   }
 
   @media (min-width: 1500px) {

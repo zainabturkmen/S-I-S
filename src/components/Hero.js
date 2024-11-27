@@ -69,6 +69,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="clients">
+        <div>
+          <h1>80+</h1>
+          <p>Satisfied clients</p>
+        </div>
+      </div>
     </Wrapper>
   );
 };

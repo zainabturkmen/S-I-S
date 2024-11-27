@@ -255,6 +255,10 @@ const Wrapper = styled.div`
       text-align: start;
     }
 
+    h3{
+      margin-top: -1.5em;
+    }
+
     .bottom {
       margin-right: 2em;
       flex-direction: row;
@@ -303,6 +307,7 @@ const Wrapper = styled.div`
     }
     .contact {
       padding: 0.8em 1.5em;
+      /* border-radius: 6em; */
     }
 
     img {

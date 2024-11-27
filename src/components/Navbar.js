@@ -93,7 +93,7 @@ const Wrapper = styled.div`
     text-align: center;
     text-decoration: none;
     color: black;
-    border-radius: 20px;
+    border-radius: 3em;
     border: 2px solid #4f46e5;
     background: #fff;
     justify-self: center;

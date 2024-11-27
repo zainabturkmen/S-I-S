@@ -325,16 +325,24 @@ const Wrapper = styled.div`
       justify-content: space-around;
       align-items: center;
       margin-top: 1em;
+      max-width: fit-content;
     }
-    /* .number {
-      text-align: start;
-      font-size: 30px;
+
+    .content {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: sta;
+    }
+    .number {
+      font-size: 34px;
     }
 
     .client {
       font-size: 20px;
-      text-align: start;
-    } */
+    }
   }
 
   @media (min-width: 1500px) {

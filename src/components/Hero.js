@@ -329,6 +329,7 @@ const Wrapper = styled.div`
       margin-top: 1em;
     }
     .number {
+      text-align: start;
 
     font-size: 30px;
   }

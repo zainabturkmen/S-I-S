@@ -322,11 +322,11 @@ const Wrapper = styled.div`
     .bottom-container {
       display: flex;
       flex-direction: row;
-      /* justify-content: center; */
+      justify-content: space-around;
       align-items: center;
       margin-top: 1em;
     }
-    .number {
+    /* .number {
       text-align: start;
       font-size: 30px;
     }
@@ -334,7 +334,7 @@ const Wrapper = styled.div`
     .client {
       font-size: 20px;
       text-align: start;
-    }
+    } */
   }
 
   @media (min-width: 1500px) {

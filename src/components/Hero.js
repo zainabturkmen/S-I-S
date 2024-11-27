@@ -322,7 +322,7 @@ const Wrapper = styled.div`
     .bottom-container {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       margin-top: 1em;
     }

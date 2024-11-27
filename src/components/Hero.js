@@ -69,10 +69,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="clients">
-        <div>
-          <h1>80+</h1>
-          <p>Satisfied clients</p>
+      <div className="bottom-container">
+        <div className="content">
+          <h1 className="number">80+</h1>
+          <p className="client">Satisfied clients</p>
         </div>
       </div>
     </Wrapper>
@@ -245,6 +245,28 @@ const Wrapper = styled.div`
     }
   }
 
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .content {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; */
+    text-align: center;
+  }
+
+  .number {
+    margin-bottom: -0.5em;
+    color: #4f46e5;
+  }
+
   @media (min-width: 1000px) {
     .container {
       display: flex;
@@ -261,7 +283,7 @@ const Wrapper = styled.div`
       text-align: start;
     }
 
-    h3{
+    h3 {
       margin-top: -1.5em;
     }
 

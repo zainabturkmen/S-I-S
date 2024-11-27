@@ -328,6 +328,14 @@ const Wrapper = styled.div`
       align-items: center;
       margin-top: 1em;
     }
+    .number {
+
+    font-size: 30px;
+  }
+
+  .client {
+    font-size: 20px;
+  }
   }
 
   @media (min-width: 1500px) {

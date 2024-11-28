@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div>
+        <div className="top">
           <p className="about">About me</p>
 
           <h1>About Me</h1>
@@ -14,8 +14,8 @@ const About = () => {
             in Adobe Creative Suite, brand identity development, typography,
             print and digital design, illustration, UI/UX design, photo editing,
             Motion design, visual communication, attention to detail,
-            collaboration, and problem-solving. Let's create impactful
-            visuals together
+            collaboration, and problem-solving. Let's create impactful visuals
+            together
           </h3>
         </div>
         <div>
@@ -27,13 +27,46 @@ const About = () => {
 };
 
 const Wrapper = styled.div`
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+  }
 
-.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about {
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #4f46e5;
+    border-radius: 50%;
+    width: 62px;
+    padding: 0.3em 0;
+    /* margin-bottom: -2em; */
+  }
+  h1 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 78px; /* 260% */
+    margin-top: -0.5em;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 201%; /* 32.16px */
+    margin-top: -1.5em;
+  }
 `;
 
 export default About;

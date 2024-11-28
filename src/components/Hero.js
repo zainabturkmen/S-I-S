@@ -271,8 +271,10 @@ const Wrapper = styled.div`
   }
 
   .client {
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
+    font-weight: 400;
+    font-family: Poppins;
   }
 
   @media (min-width: 1000px) {

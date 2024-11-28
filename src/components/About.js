@@ -161,8 +161,19 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      gap: 10em;
-      width: 1000px;    
+      /* gap: 20em; */
+      width: 1200px;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+    h3{
+      text-align: start;
+      width: 500px;
     }
   }
 `;

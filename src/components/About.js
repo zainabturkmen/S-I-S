@@ -19,7 +19,13 @@ const About = () => {
           </h3>
         </div>
         <div>
-
+          <div>
+            <h4>Graphic Designe</h4>
+            <div>
+              <p className="number">95%</p>
+              <div className="percentage"></div>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>

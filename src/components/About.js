@@ -31,19 +31,19 @@ const About = () => {
           <div>
             <h4>Videography</h4>
             <div>
-              <div className="percentage-container">
+              <div className="percentage-container2">
                 <div className="percentage"></div>
               </div>
-              <p className="number">95%</p>
+              <p className="number">85%</p>
             </div>
           </div>
           <div>
             <h4>3D Designe</h4>
             <div>
-              <div className="percentage-container">
+              <div className="percentage-container3">
                 <div className="percentage"></div>
               </div>
-              <p className="number">95%</p>
+              <p className="number">90%</p>
             </div>
           </div>
           <div>
@@ -52,7 +52,7 @@ const About = () => {
               <div className="percentage-container">
                 <div className="percentage"></div>
               </div>
-              <p className="number">95%</p>
+              <p className="number">80%</p>
             </div>
           </div>
         </div>

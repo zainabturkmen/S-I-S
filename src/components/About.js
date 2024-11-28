@@ -18,7 +18,6 @@ const About = () => {
       </div>
       <div>
         <label>Graphic Design</label>
-        <input type="range"/>
       </div>
     </Wrapper>
   );

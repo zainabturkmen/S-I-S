@@ -267,7 +267,7 @@ const Wrapper = styled.div`
     margin-bottom: -0.5em;
     color: #4f46e5;
     font-size: 30px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .client {
@@ -275,10 +275,10 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1000px) {
-    .hello{
+    .hello {
       margin-bottom: -1.5em;
-    } 
-    
+    }
+
     .container {
       display: flex;
       justify-content: space-around;

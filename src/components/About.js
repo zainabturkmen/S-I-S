@@ -16,7 +16,10 @@ const About = () => {
           problem-solving. Let's create impactful visuals together
         </h3>
       </div>
-      <div></div>
+      <div>
+        <label>Graphic Design</label>
+        <input type="range"/>
+      </div>
     </Wrapper>
   );
 };

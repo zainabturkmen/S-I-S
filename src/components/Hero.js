@@ -255,10 +255,8 @@ const Wrapper = styled.div`
   .bottom-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
   }
 
   .content {
@@ -269,17 +267,19 @@ const Wrapper = styled.div`
     margin-bottom: -0.5em;
     color: #4f46e5;
     font-size: 30px;
+    text-align: center;
   }
 
   .client {
     font-size: 28px;
+    text-align: center;
   }
 
   @media (min-width: 1000px) {
-    .hello {
-      margin-bottom: -1.5em;
-    }
-
+    .hello{
+      margin-bottom: -1em;
+    } 
+    
     .container {
       display: flex;
       justify-content: space-around;

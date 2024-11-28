@@ -22,8 +22,10 @@ const About = () => {
           <div>
             <h4>Graphic Designe</h4>
             <div>
+              <div className="percentage-container">
+                <div className="percentage"></div>
+              </div>
               <p className="number">95%</p>
-              <div className="percentage"></div>
             </div>
           </div>
         </div>
@@ -73,6 +75,19 @@ const Wrapper = styled.div`
     font-weight: 400;
     line-height: 201%; /* 32.16px */
     margin-top: -1.5em;
+  }
+
+  .percentage-container {
+    width: 355px;
+    border-radius: 6px;
+    background: #edecec;
+  }
+
+  .percentage {
+    width: 340px;
+    height: 6px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
   }
 `;
 

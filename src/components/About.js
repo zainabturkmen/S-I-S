@@ -47,7 +47,7 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h4>Graphic Designe</h4>
+            <h4>Social Media Marketing</h4>
             <div>
               <div className="percentage-container">
                 <div className="percentage"></div>

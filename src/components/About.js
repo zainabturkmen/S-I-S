@@ -161,7 +161,7 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      /* gap: 20em; */
+      gap: 5em;
       width: 1200px;
     }
 
@@ -171,10 +171,11 @@ const Wrapper = styled.div`
       align-items: start;
       justify-content: center;
     }
-    
+
     h3 {
       text-align: start;
       width: 500px;
+      line-height: 2em;
     }
   }
 `;

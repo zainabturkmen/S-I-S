@@ -255,7 +255,6 @@ const Wrapper = styled.div`
   .bottom-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -267,7 +266,6 @@ const Wrapper = styled.div`
     margin-bottom: -0.5em;
     color: #4f46e5;
     font-size: 30px;
-    /* text-align: center; */
   }
 
   .client {

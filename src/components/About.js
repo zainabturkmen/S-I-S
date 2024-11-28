@@ -109,6 +109,7 @@ const Wrapper = styled.div`
     border-radius: 6px;
     background: #edecec;
     margin-top: -0.7em;
+    margin-bottom: -1.6em;
   }
 
   .percentage,
@@ -139,7 +140,7 @@ const Wrapper = styled.div`
   .number4 {
     font-size: 14px;
     position: relative;
-    top: -3.5em;
+    top: -1.8em;
   }
 
   .number {

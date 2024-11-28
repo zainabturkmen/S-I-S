@@ -19,7 +19,7 @@ const About = () => {
           </h3>
         </div>
         <div>
-          <label>Graphic Design</label>
+
         </div>
       </div>
     </Wrapper>
@@ -34,6 +34,7 @@ const Wrapper = styled.div`
     align-items: center;
     width: 400px;
     margin: 0 auto;
+    gap: 2em;
   }
 
   .top {
@@ -49,7 +50,6 @@ const Wrapper = styled.div`
     border-radius: 50%;
     width: 62px;
     padding: 0.3em 0;
-    /* margin-bottom: -2em; */
   }
   h1 {
     font-family: Inter;

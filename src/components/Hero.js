@@ -276,10 +276,10 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1000px) {
-    .hello{
+    .hello {
       margin-bottom: -1em;
-    } 
-    
+    }
+
     .container {
       display: flex;
       justify-content: space-around;
@@ -389,6 +389,11 @@ const Wrapper = styled.div`
       top: 7em;
       left: 0em;
       height: 75%;
+    }
+
+    .bottom-container {
+      gap: 3em;
+      margin-left: -1em;
     }
   }
 `;

@@ -49,7 +49,7 @@ const About = () => {
           <div>
             <h4>Social Media Marketing</h4>
             <div>
-              <div className="percentage-container">
+              <div className="percentage-container4">
                 <div className="percentage"></div>
               </div>
               <p className="number">80%</p>

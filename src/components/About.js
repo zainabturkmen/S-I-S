@@ -35,6 +35,7 @@ const Wrapper = styled.div`
     width: 400px;
     margin: 0 auto;
     gap: 2em;
+    padding: 1em;
   }
 
   .top {

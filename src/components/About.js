@@ -156,6 +156,15 @@ const Wrapper = styled.div`
     left: 21em;
   }
 
+  @media (min-width: 1000px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 10em;
+      width: 1000px;    
+    }
+  }
 `;
 
 export default About;

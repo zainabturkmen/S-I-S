@@ -28,6 +28,33 @@ const About = () => {
               <p className="number">95%</p>
             </div>
           </div>
+          <div>
+            <h4>Videography</h4>
+            <div>
+              <div className="percentage-container">
+                <div className="percentage"></div>
+              </div>
+              <p className="number">95%</p>
+            </div>
+          </div>
+          <div>
+            <h4>3D Designe</h4>
+            <div>
+              <div className="percentage-container">
+                <div className="percentage"></div>
+              </div>
+              <p className="number">95%</p>
+            </div>
+          </div>
+          <div>
+            <h4>Graphic Designe</h4>
+            <div>
+              <div className="percentage-container">
+                <div className="percentage"></div>
+              </div>
+              <p className="number">95%</p>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -81,6 +108,7 @@ const Wrapper = styled.div`
     width: 355px;
     border-radius: 6px;
     background: #edecec;
+    margin-top: -.7em;
   }
 
   .percentage {
@@ -88,6 +116,13 @@ const Wrapper = styled.div`
     height: 6px;
     border-radius: 6px;
     background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
+  }
+
+  .number{
+    font-size: 14px;
+    position: relative;
+    top: -3.5em;
+    left: 23em;
   }
 `;
 

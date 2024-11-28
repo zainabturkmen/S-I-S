@@ -178,6 +178,18 @@ const Wrapper = styled.div`
       line-height: 2em;
     }
   }
+  @media (min-width: 1500px) {
+    .container {
+      justify-content: space-between;
+      gap: 2em;
+    }
+
+    h1{
+      font-size: 2.5em;
+      margin-bottom: .5em;
+    }
+ 
+  }
 `;
 
 export default About;

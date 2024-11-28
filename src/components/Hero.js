@@ -275,6 +275,10 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1000px) {
+    .hello{
+      margin-bottom: -1.5em;
+    } 
+    
     .container {
       display: flex;
       justify-content: space-around;

@@ -31,28 +31,28 @@ const About = () => {
           <div>
             <h4>Videography</h4>
             <div>
-              <div className="percentage-container2">
-                <div className="percentage"></div>
+              <div className="percentage-container">
+                <div className="percentage2"></div>
               </div>
-              <p className="number">85%</p>
+              <p className="number2">85%</p>
             </div>
           </div>
           <div>
             <h4>3D Designe</h4>
             <div>
-              <div className="percentage-container3">
-                <div className="percentage"></div>
+              <div className="percentage-container">
+                <div className="percentage3"></div>
               </div>
-              <p className="number">90%</p>
+              <p className="number3">90%</p>
             </div>
           </div>
           <div>
             <h4>Social Media Marketing</h4>
             <div>
-              <div className="percentage-container4">
-                <div className="percentage"></div>
+              <div className="percentage-container">
+                <div className="percentage4"></div>
               </div>
-              <p className="number">80%</p>
+              <p className="number4">80%</p>
             </div>
           </div>
         </div>
@@ -108,22 +108,53 @@ const Wrapper = styled.div`
     width: 355px;
     border-radius: 6px;
     background: #edecec;
-    margin-top: -.7em;
+    margin-top: -0.7em;
   }
 
-  .percentage {
-    width: 340px;
+  .percentage,
+  .percentage2,
+  .percentage3,
+  .percentage4 {
     height: 6px;
     border-radius: 6px;
     background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
   }
 
-  .number{
+  .percentage {
+    width: 340px;
+  }
+  .percentage2 {
+    width: 320px;
+  }
+  .percentage3 {
+    width: 335px;
+  }
+  .percentage4 {
+    width: 305px;
+  }
+
+  .number,
+  .number2,
+  .number3,
+  .number4 {
     font-size: 14px;
     position: relative;
     top: -3.5em;
+  }
+
+  .number {
     left: 23em;
   }
+  .number2 {
+    left: 22em;
+  }
+  .number3 {
+    left: 23em;
+  }
+  .number4 {
+    left: 21em;
+  }
+
 `;
 
 export default About;

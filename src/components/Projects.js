@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+  return <Wrapper>Projects</Wrapper>;
+};
 
-export default Projects
+const Wrapper = styled.div`
+  background-color: red;
+`;
+
+export default Projects;

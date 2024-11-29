@@ -156,13 +156,13 @@ const Wrapper = styled.div`
     left: 21em;
   }
 
-  @media (min-width: 1000px) {
+  /* @media (min-width: 1000px) {
     .container {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       gap: 5em;
-      /* width: 1200px; */
+      width: 1200px;
     }
 
     .top {
@@ -182,7 +182,7 @@ const Wrapper = styled.div`
     .container {
       justify-content: space-between;
       gap: 2em;
-      /* width: 1300px; */
+      width: 1300px;
     }
 
     h1{
@@ -191,7 +191,7 @@ const Wrapper = styled.div`
     }
 
  
-  }
+  } */
 `;
 
 export default About;

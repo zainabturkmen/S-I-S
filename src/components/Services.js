@@ -6,6 +6,7 @@ import { services2 } from "./data";
 const Services = () => {
   return (
     <Wrapper>
+      <h1>My Services</h1>
       <div className="container">
         {services2.map((service) => {
           const { id, icon, title, text } = service;
@@ -24,7 +25,7 @@ const Services = () => {
 
 const Wrapper = styled.div`
   .container {
-    margin-top: 5em;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +33,11 @@ const Wrapper = styled.div`
     gap: 3em;
   }
 
+  h1 {
+    text-align: center;
+    margin-top: 3em;
+
+  }
   .sub-container {
     display: flex;
     flex-direction: column;
@@ -84,7 +90,7 @@ const Wrapper = styled.div`
       row-gap: 5em;
       width: 1300px;
       margin: 0 auto;
-      margin-top: 6em;
+      margin-top: 4em;
     }
   }
 `;

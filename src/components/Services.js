@@ -76,13 +76,14 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1400px) {
     .container {
       flex-wrap: wrap;
       flex-direction: row;
-      /* gap: 5em; */
-      width: 1200px;
-      margin: auto 0;
+      gap: 12em;
+      width: 1300px;
+      margin: 0 auto;
+      margin-top: 6em;
     }
   }
 `;

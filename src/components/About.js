@@ -155,12 +155,11 @@ const Wrapper = styled.div`
     margin-right: 1.5em;
   }
 
-  /* @media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     .container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      gap: 5em;
+      justify-content: space-around;
       width: 1000px;
     }
 
@@ -176,7 +175,7 @@ const Wrapper = styled.div`
       width: 500px;
       line-height: 2em;
     }
-  } */
+  }
   /* @media (min-width: 1500px) {
     .container {
     }

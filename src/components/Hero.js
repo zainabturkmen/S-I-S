@@ -330,7 +330,6 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 5em;
       padding-bottom: 3em;
     }
 

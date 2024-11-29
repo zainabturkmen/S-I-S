@@ -154,7 +154,7 @@ const Wrapper = styled.div`
   }
 
   .contact {
-    border: 1px solid #4f46e5;
+    /* border: 1px solid #4f46e5; */
     padding: 0.5em 1em;
     border-radius: 2em;
     transition: all 0.3s linear;

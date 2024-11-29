@@ -72,14 +72,7 @@ const Wrapper = styled.div`
     font-size: 1.3em;
     &:hover {
       border-bottom: 2px solid #4f46e5;
-      background: linear-gradient(
-        90deg,
-        rgba(79, 70, 229, 0.8) 0%,
-        #2c277f 100%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #4f46e5;
     }
   }
 
@@ -100,10 +93,8 @@ const Wrapper = styled.div`
   .cv {
     text-align: center;
     text-decoration: none;
-    color: black;
     border-radius: 3em;
     border: 2px solid #4f46e5;
-    background: #fff;
     justify-self: center;
     width: 160px;
     padding: 0.8em 1em;

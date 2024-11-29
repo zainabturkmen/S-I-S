@@ -108,7 +108,6 @@ const Wrapper = styled.div`
     line-height: 201%;
     margin-top: -2em;
     /* width: 355px; */
-
   }
 
   .percentage-container {
@@ -176,46 +175,49 @@ const Wrapper = styled.div`
       line-height: 2em;
     }
   }
-  /* @media (min-width: 1500px) {
+  @media (min-width: 1500px) {
     .container {
+      justify-content: space-between;
     }
 
     h1 {
       font-size: 2.5em;
       margin-bottom: 0.5em;
+      margin-top: -0.3em;
     }
 
+    h3 {
+      width: 600px;
+      line-height: 2.2em;
+    }
 
     .percentage-container {
-      width: 395px;
+      width: 500px;
     }
 
     .percentage {
-      width: 385px;
+      width: 490px;
     }
     .percentage2 {
-      width: 370px;
+      width: 470px;
     }
     .percentage3 {
-      width: 380px;
+      width: 480px;
     }
     .percentage4 {
-      width: 360px;
+      width: 460px;
     }
 
     .number {
-      left: 26em;
+      margin-right: -0.2em;
     }
     .number2 {
-      left: 25em;
-    }
-    .number3 {
-      left: 25.5em;
+      margin-right: 1em;
     }
     .number4 {
-      left: 24em;
+      margin-right: 1.5em;
     }
-  } */
+  }
 `;
 
 export default About;

@@ -120,7 +120,10 @@ const Wrapper = styled.div`
   }
 
   span {
-    color: #4f46e5;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   h3 {
@@ -265,9 +268,12 @@ const Wrapper = styled.div`
 
   .number {
     margin-bottom: -0.5em;
-    color: #4f46e5;
     font-size: 30px;
     text-align: center;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .client {

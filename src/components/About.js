@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div>
             <div className="title">
-              <h4>Graphic Designe</h4>
+              <h4>Videography</h4>
               <p className="number2">85%</p>
             </div>
             <div>
@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div>
             <div className="title">
-              <h4>Graphic Designe</h4>
+              <h4>3D Designe</h4>
               <p className="number3">90%</p>
             </div>
             <div>
@@ -54,7 +54,7 @@ const About = () => {
           </div>
           <div>
             <div className="title">
-              <h4>Graphic Designe</h4>
+              <h4>Social Media Marketing</h4>
               <p className="number4">80%</p>
             </div>
             <div>
@@ -180,13 +180,12 @@ const Wrapper = styled.div`
       justify-content: center;
       align-items: center;
       gap: 10em;
-      max-width: 1200px;
+      /* max-width: 1000px; */
       margin: 0 auto;
     }
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0.5em;
       margin-top: -0.3em;
     }
 

@@ -154,12 +154,17 @@ const Wrapper = styled.div`
   }
 
   .contact {
-    /* border: 1px solid #4f46e5; */
+    border: 1px solid #4f46e5;
+
     padding: 0.5em 1em;
     border-radius: 2em;
     transition: all 0.3s linear;
     &:hover {
-      background-color: #4f46e5;
+      background: linear-gradient(
+        90deg,
+        rgba(79, 70, 229, 0.8) 0%,
+        #2c277f 100%
+      );
       color: #fff;
     }
   }

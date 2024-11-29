@@ -71,7 +71,12 @@ const Wrapper = styled.div`
     color: black;
     font-size: 1.3em;
     &:hover {
-      color: #4f46e5;
+      /* color: #4f46e5; */
+      color: linear-gradient(
+        90deg,
+        rgba(79, 70, 229, 0.8) 0%,
+        #2c277f 100%
+      );
     }
   }
 
@@ -103,7 +108,11 @@ const Wrapper = styled.div`
     transition: all 0.3s linear;
     &:hover {
       color: white;
-      background-color: #4f46e5;
+      background: linear-gradient(
+        90deg,
+        rgba(79, 70, 229, 0.8) 0%,
+        #2c277f 100%
+      );
     }
   }
 
@@ -177,7 +186,7 @@ const Wrapper = styled.div`
       font-size: 0.8em;
       width: 90px;
       border: 1px solid #4f46e5;
-      padding: .6em 1em;
+      padding: 0.6em 1em;
     }
   }
 `;

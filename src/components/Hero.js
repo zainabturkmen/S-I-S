@@ -372,7 +372,6 @@ const Wrapper = styled.div`
     }
     .contact {
       padding: 0.8em 1.5em;
-      /* border-radius: 6em; */
     }
 
     img {
@@ -395,7 +394,7 @@ const Wrapper = styled.div`
     }
 
     .bottom-container {
-      gap: 3em;
+      /* gap: .5em; */
       margin-left: -1em;
     }
   }

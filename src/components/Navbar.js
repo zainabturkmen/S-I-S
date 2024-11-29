@@ -71,12 +71,15 @@ const Wrapper = styled.div`
     color: black;
     font-size: 1.3em;
     &:hover {
-      /* color: #4f46e5; */
-      color: linear-gradient(
+      border-bottom: 2px solid #4f46e5;
+      background: linear-gradient(
         90deg,
         rgba(79, 70, 229, 0.8) 0%,
         #2c277f 100%
       );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -107,12 +110,12 @@ const Wrapper = styled.div`
     font-size: 1.1em;
     transition: all 0.3s linear;
     &:hover {
-      color: white;
       background: linear-gradient(
         90deg,
         rgba(79, 70, 229, 0.8) 0%,
         #2c277f 100%
       );
+      color: #fff;
     }
   }
 

@@ -18,41 +18,49 @@ const About = () => {
             together
           </h3>
         </div>
-        <div>
+        <div className="bottom">
           <div>
-            <h4>Graphic Designe</h4>
+            <div className="title">
+              <h4>Graphic Designe</h4>
+              <p className="number">95%</p>
+            </div>
             <div>
               <div className="percentage-container">
                 <div className="percentage"></div>
               </div>
-              <p className="number">95%</p>
             </div>
           </div>
           <div>
-            <h4>Videography</h4>
+            <div className="title">
+              <h4>Graphic Designe</h4>
+              <p className="number2">85%</p>
+            </div>
             <div>
               <div className="percentage-container">
                 <div className="percentage2"></div>
               </div>
-              <p className="number2">85%</p>
             </div>
           </div>
           <div>
-            <h4>3D Designe</h4>
+            <div className="title">
+              <h4>Graphic Designe</h4>
+              <p className="number3">90%</p>
+            </div>
             <div>
               <div className="percentage-container">
                 <div className="percentage3"></div>
               </div>
-              <p className="number3">90%</p>
             </div>
           </div>
           <div>
-            <h4>Social Media Marketing</h4>
+            <div className="title">
+              <h4>Graphic Designe</h4>
+              <p className="number4">80%</p>
+            </div>
             <div>
               <div className="percentage-container">
                 <div className="percentage4"></div>
               </div>
-              <p className="number4">80%</p>
             </div>
           </div>
         </div>
@@ -65,9 +73,7 @@ const Wrapper = styled.div`
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
+    width: 350px;
     margin: 0 auto;
     gap: 2em;
     padding: 1em;
@@ -91,7 +97,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
-    line-height: 78px; /* 260% */
+    line-height: 78px;
     margin-top: -0.5em;
   }
 
@@ -100,8 +106,9 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 201%; /* 32.16px */
+    line-height: 201%;
     margin-top: -1.5em;
+    width: 300px;
   }
 
   .percentage-container {
@@ -109,7 +116,12 @@ const Wrapper = styled.div`
     border-radius: 6px;
     background: #edecec;
     margin-top: -0.7em;
-    margin-bottom: -1.6em;
+    /* margin-bottom: -2em; */
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
   }
 
   .percentage,
@@ -134,35 +146,23 @@ const Wrapper = styled.div`
     width: 305px;
   }
 
-  .number,
-  .number2,
-  .number3,
-  .number4 {
-    font-size: 14px;
-    position: relative;
-    top: -1.8em;
-  }
-
   .number {
-    left: 23em;
+    margin-right: -0.2em;
   }
   .number2 {
-    left: 22em;
-  }
-  .number3 {
-    left: 23em;
+    margin-right: 1em;
   }
   .number4 {
-    left: 21em;
+    margin-right: 1.5em;
   }
 
-  @media (min-width: 1000px) {
+  /* @media (min-width: 1000px) {
     .container {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       gap: 5em;
-      width: 1200px;
+      width: 1000px;
     }
 
     .top {
@@ -177,20 +177,47 @@ const Wrapper = styled.div`
       width: 500px;
       line-height: 2em;
     }
-  }
-  @media (min-width: 1500px) {
+  } */
+  /* @media (min-width: 1500px) {
     .container {
-      gap: 2em;
-      /* width: 1300px; */
     }
 
-    h1{
+    h1 {
       font-size: 2.5em;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
     }
 
- 
-  }
+
+    .percentage-container {
+      width: 395px;
+    }
+
+    .percentage {
+      width: 385px;
+    }
+    .percentage2 {
+      width: 370px;
+    }
+    .percentage3 {
+      width: 380px;
+    }
+    .percentage4 {
+      width: 360px;
+    }
+
+    .number {
+      left: 26em;
+    }
+    .number2 {
+      left: 25em;
+    }
+    .number3 {
+      left: 25.5em;
+    }
+    .number4 {
+      left: 24em;
+    }
+  } */
 `;
 
 export default About;

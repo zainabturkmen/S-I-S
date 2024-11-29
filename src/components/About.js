@@ -162,7 +162,7 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: space-around;
       gap: 5em;
-      width: 1200px;
+      /* width: 1200px; */
     }
 
     .top {

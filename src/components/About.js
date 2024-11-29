@@ -177,8 +177,11 @@ const Wrapper = styled.div`
   }
   @media (min-width: 1500px) {
     .container {
-      /* justify-content: space-between; */
-      max-width: 1000px;
+      justify-content: center;
+      align-items: center;
+      gap: 10em;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     h1 {
@@ -190,6 +193,7 @@ const Wrapper = styled.div`
     h3 {
       width: 600px;
       line-height: 2.2em;
+      font-size: 18px;
     }
 
     .percentage-container {

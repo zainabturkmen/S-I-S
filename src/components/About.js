@@ -182,7 +182,7 @@ const Wrapper = styled.div`
     .container {
       justify-content: space-between;
       gap: 2em;
-      width: 1300px;
+      /* width: 1300px; */
     }
 
     h1{

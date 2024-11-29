@@ -96,19 +96,19 @@ const Wrapper = styled.div`
   h1 {
     font-family: Inter;
     font-size: 30px;
-    font-weight: 600;
     line-height: 78px;
-    margin-top: -0.5em;
+    margin-top: -0.6em;
   }
 
   h3 {
     text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 201%;
-    margin-top: -1.5em;
-    width: 300px;
+    margin-top: -2em;
+    /* width: 355px; */
+
   }
 
   .percentage-container {
@@ -116,7 +116,6 @@ const Wrapper = styled.div`
     border-radius: 6px;
     background: #edecec;
     margin-top: -0.7em;
-    /* margin-bottom: -2em; */
   }
 
   .title {

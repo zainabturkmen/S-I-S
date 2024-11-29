@@ -182,12 +182,14 @@ const Wrapper = styled.div`
     .container {
       justify-content: space-between;
       gap: 2em;
+      width: 1300px;
     }
 
     h1{
       font-size: 2.5em;
       margin-bottom: .5em;
     }
+
  
   }
 `;

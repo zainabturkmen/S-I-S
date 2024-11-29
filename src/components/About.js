@@ -177,7 +177,8 @@ const Wrapper = styled.div`
   }
   @media (min-width: 1500px) {
     .container {
-      justify-content: space-between;
+      /* justify-content: space-between; */
+      max-width: 1000px;
     }
 
     h1 {

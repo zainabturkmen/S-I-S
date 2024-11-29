@@ -5,6 +5,12 @@ import { GrServices } from "react-icons/gr";
 import { BsCalendar2Plus } from "react-icons/bs";
 import { BiCommentCheck } from "react-icons/bi";
 import { MdOutlinePhone } from "react-icons/md";
+import { MdGraphicEq } from "react-icons/md";
+import { FiLayers } from "react-icons/fi";
+import { MdOutlineSocialDistance } from "react-icons/md";
+import { MdAutoAwesomeMotion } from "react-icons/md";
+import { PiGooglePhotosLogoLight } from "react-icons/pi";
+import { PiVideoLight } from "react-icons/pi";
 
 export const links = [
   {
@@ -60,5 +66,44 @@ export const services = [
     id: 1,
     number: "200+",
     text: "Projects completed",
+  },
+];
+
+export const services2 = [
+  {
+    id: 1,
+    icon: <MdGraphicEq />,
+    title: "Graphic Design",
+    text: "We provide Graphic Design services, with the best designers",
+  },
+  {
+    id: 2,
+    icon: <FiLayers />,
+    title: "UI/UX Designe",
+    text: "We provide UI/UX Design services, and of course with the best quality",
+  },
+  {
+    id: 3,
+    icon: <MdOutlineSocialDistance />,
+    title: "Social Media Marketing",
+    text: "We provide Social Media Marketing services, with the best Marketers",
+  },
+  {
+    id: 4,
+    icon: <MdAutoAwesomeMotion />,
+    title: "Motion Graphic",
+    text: "Create a platform with the best and coolest quality from us.",
+  },
+  {
+    id: 5,
+    icon: <PiGooglePhotosLogoLight />,
+    title: "Photography",
+    text: "We provide Photography services, and of course with the best quality",
+  },
+  {
+    id: 2,
+    icon: <PiVideoLight />,
+    title: "Videography",
+    text: "Create a platform with the best and coolest quality from us.",
   },
 ];

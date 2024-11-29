@@ -1,18 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { MdGraphicEq } from "react-icons/md";
+import { services2 } from "./data";
 
 const Services = () => {
   return (
     <Wrapper>
       <div className="container">
-        <div className="sub-container">
-          <div className="icon">
-            <MdGraphicEq />
-          </div>
-          <h3>Graphic Design</h3>
-          <p>We provide Graphic Design services, with the best designers</p>
-        </div>
+        {services2.map((service) => {
+          const { id, icon, title, text } = service;
+          return (
+            <div className="sub-container" key={id}>
+              <div className="icon">{icon}</div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </div>
+          );
+        })}
       </div>
     </Wrapper>
   );
@@ -25,6 +29,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3em;
   }
 
   .sub-container {

@@ -80,7 +80,8 @@ const Wrapper = styled.div`
     .container {
       flex-wrap: wrap;
       flex-direction: row;
-      gap: 12em;
+      column-gap: 12em;
+      row-gap: 5em;
       width: 1300px;
       margin: 0 auto;
       margin-top: 6em;

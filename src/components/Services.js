@@ -67,6 +67,24 @@ const Wrapper = styled.div`
     width: 300px;
     margin-top: 0;
   }
+
+  @media (min-width: 1000px) {
+    .container {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 5em;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .container {
+      flex-wrap: wrap;
+      flex-direction: row;
+      /* gap: 5em; */
+      width: 1200px;
+      margin: auto 0;
+    }
+  }
 `;
 
 export default Services;

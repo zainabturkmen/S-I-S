@@ -398,6 +398,12 @@ const Wrapper = styled.div`
       margin-left: -1em;
     }
   }
+
+  @media (min-width: 1500px) {
+    .bottom-container {
+      gap: 3.5em;
+    }
+  }
 `;
 
 export default Hero;

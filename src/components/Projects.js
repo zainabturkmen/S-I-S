@@ -17,7 +17,7 @@ const Projects = () => {
     <Wrapper>
       <div className="container">
         <h1>My Projects</h1>
-        <div className="iimg-container">
+        <div className="img-container">
           <img src={image1} alt="image1" />
           <img src={image2} alt="image2" />
           <img src={image3} alt="image3" />
@@ -34,10 +34,51 @@ const Projects = () => {
 };
 
 const Wrapper = styled.div`
-  .container {
+  img {
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    /* width: 100%; */
+    /* height: 317.553px; */
+  }
+  .img-container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 2em;
+    padding: 1em;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 3em;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 78px; /* 260% */
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1500px) {
+    /* .container {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 5em;
+    } */
+
+    .img-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1450px;
+      margin: 0 auto;
+      gap: 2em;
+      padding-left: 1em;
+      padding-top: 2em;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+    }
   }
 `;
 

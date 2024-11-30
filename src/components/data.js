@@ -12,6 +12,16 @@ import { MdAutoAwesomeMotion } from "react-icons/md";
 import { PiGooglePhotosLogoLight } from "react-icons/pi";
 import { PiVideoLight } from "react-icons/pi";
 
+import image1 from "../assets/Image (1).png";
+import image2 from "../assets/Image (2).png";
+import image3 from "../assets/Image (3).png";
+import image4 from "../assets/Image (4).png";
+import image5 from "../assets/Image (5).png";
+import image6 from "../assets/Image (6).png";
+import image7 from "../assets/Image (7).png";
+import image8 from "../assets/Image (8).png";
+import image9 from "../assets/Image (9).png";
+
 export const links = [
   {
     id: 1,
@@ -107,3 +117,15 @@ export const services2 = [
     text: "Create a platform with the best and coolest quality from us.",
   },
 ];
+
+export {
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+};

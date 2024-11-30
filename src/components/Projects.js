@@ -16,6 +16,7 @@ const Projects = () => {
   return (
     <Wrapper>
       <div className="container">
+        <h1>My Projects</h1>
         <div className="iimg-container">
           <img src={image1} alt="image1" />
           <img src={image2} alt="image2" />

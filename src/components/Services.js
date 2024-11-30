@@ -25,7 +25,7 @@ const Services = () => {
 
 const Wrapper = styled.div`
   .container {
-    margin-top: 3em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,10 @@ const Wrapper = styled.div`
   h1 {
     text-align: center;
     margin-top: 3em;
-
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 78px; /* 260% */
   }
   .sub-container {
     display: flex;

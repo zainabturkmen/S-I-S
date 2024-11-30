@@ -83,6 +83,11 @@ const Wrapper = styled.div`
       flex-direction: row;
       gap: 5em;
     }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+    }
   }
 
   @media (min-width: 1400px) {

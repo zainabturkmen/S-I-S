@@ -98,6 +98,7 @@ const Wrapper = styled.div`
     font-size: 30px;
     line-height: 78px;
     margin-top: -0.6em;
+    font-weight: 600;
   }
 
   h3 {

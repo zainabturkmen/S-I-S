@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Projects = () => {
   return <Wrapper>
     <div className="container">
-
+      <div className="iimg-container"></div>
     </div>
   </Wrapper>;
 };

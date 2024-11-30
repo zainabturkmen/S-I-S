@@ -36,8 +36,9 @@ const Projects = () => {
 const Wrapper = styled.div`
   img {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    /* width: 100%; */
-    /* height: 317.553px; */
+    width: 300px;
+    height: 220px;
+    flex-shrink: 0;
   }
   .img-container {
     display: flex;
@@ -46,6 +47,8 @@ const Wrapper = styled.div`
     margin: 0 auto;
     gap: 2em;
     padding: 1em;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {
@@ -61,11 +64,19 @@ const Wrapper = styled.div`
     .img-container {
       display: flex;
       flex-wrap: wrap;
-      max-width: 1200px;
+      max-width: 10000px;
       margin: 0 auto;
       gap: 2em;
       padding-left: 1em;
       padding-top: 2em;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 380px;
+      height: 280px;
+      flex-shrink: 0;
     }
 
     h1 {
@@ -85,6 +96,11 @@ const Wrapper = styled.div`
       padding-top: 2em;
     }
 
+    img {
+      width: 400px;
+      height: 300px;
+      flex-shrink: 0;
+    }
     h1 {
       font-size: 40px;
       font-weight: 600;

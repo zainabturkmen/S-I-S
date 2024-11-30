@@ -57,14 +57,24 @@ const Wrapper = styled.div`
     line-height: 78px; /* 260% */
     margin-bottom: 0;
   }
+  @media (min-width: 1000px) {
+    .img-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2em;
+      padding-left: 1em;
+      padding-top: 2em;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
 
   @media (min-width: 1500px) {
-    /* .container {
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 5em;
-    } */
-
     .img-container {
       display: flex;
       flex-wrap: wrap;

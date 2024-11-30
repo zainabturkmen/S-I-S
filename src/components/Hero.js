@@ -405,7 +405,6 @@ const Wrapper = styled.div`
     }
 
     .bottom-container {
-      /* gap: .5em; */
       margin-left: -1em;
     }
   }

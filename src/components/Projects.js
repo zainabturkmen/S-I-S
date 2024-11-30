@@ -39,6 +39,7 @@ const Wrapper = styled.div`
     width: 300px;
     height: 220px;
     flex-shrink: 0;
+    border-radius: 8px;
   }
   .img-container {
     display: flex;

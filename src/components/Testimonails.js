@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const Testimonails = () => {
-  return (
-    <div>Testimonails</div>
-  )
-}
+  return <Wrapper>Testimonails</Wrapper>;
+};
 
-export default Testimonails
+const Wrapper = styled.div`
+  background-color: red;
+`;
+
+export default Testimonails;

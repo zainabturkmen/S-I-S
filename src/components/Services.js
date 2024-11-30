@@ -45,7 +45,6 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center; /* font-size: 30px; */
-
     align-items: center;
   }
 

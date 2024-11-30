@@ -6,7 +6,7 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <div className="container">
-        <h1>Hear About Us</h1>
+        <h1>Hear from our customers</h1>
       </div>
     </Wrapper>
   );

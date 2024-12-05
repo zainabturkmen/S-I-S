@@ -5,47 +5,30 @@ import star from "../assets/Shape.svg";
 import user from "../assets/Ellipse 74.svg";
 import user1 from "../assets/Ellipse 74 (1).svg";
 import user2 from "../assets/Ellipse 74 (2).svg";
-import { Testimonails } from "./data";
-
+import { testimonails } from "./data";
 
 const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <div className="container">
-        <div className="customer">
-          <img src={star} />
-          <p className="reveiew">
-            We will also facilitate the business marketing of these products
-            with our SEO experts so that they become a ready to use website &
-            help sell product from company
-          </p>
-          <div className="user">
-            <img src={user} alt="user" />
-            <div className="user-info">
-              <h3>Amir Uddin</h3>
-              <p className="position">UX Designer </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <div className="container">
-          <div className="customer">
-            <img src={star} />
-            <p className="reveiew">
-              We will also facilitate the business marketing of these products
-              with our SEO experts so that they become a ready to use website &
-              help sell product from company
-            </p>
-            <div className="user">
-              <img src={user} alt="user" />
-              <div className="user-info">
-                <h3>Amir Uddin</h3>
-                <p className="position">UX Designer </p>
+      {testimonails.map((testimonail) => {
+        const { id, star, text, user, name, position } = testimonail;
+        return (
+          <div className="container" key={id}>
+            <div className="customer">
+              <img src={star} />
+              <p className="reveiew">{text}</p>
+              <div className="user">
+                <img src={user} alt="user" />
+                <div className="user-info">
+                  <h3>{name}</h3>
+                  <p className="position">{position}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div> */}
+        );
+      })}
     </Wrapper>
   );
 };

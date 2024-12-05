@@ -123,7 +123,7 @@ export const services2 = [
   },
 ];
 
-const testimonails = [
+export const testimonails = [
   {
     id: 1,
     star: star,

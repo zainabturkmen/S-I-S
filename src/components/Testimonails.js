@@ -22,7 +22,7 @@ const Testimonails = () => {
             <img src={user} alt="user" />
             <div className="user-info">
               <h3>Amir Uddin</h3>
-              <p>UX Designer </p>
+              <p className="position">UX Designer </p>
             </div>
           </div>
         </div>
@@ -42,8 +42,6 @@ const Wrapper = styled.div`
     margin-bottom: 0;
   }
 
-  .customer {
-  }
 
   .reveiew {
     color: var(--Light-Text-Color-Title, #11142d);
@@ -59,6 +57,51 @@ const Wrapper = styled.div`
       font-size: 40px;
       font-weight: 600;
     }
+  }
+
+  .container {
+    width: 420px;
+    height: 177px;
+    border-radius: 8px;
+    background-color: red;
+    padding: 2em;
+    background: var(--Light-Base-Color-White, #fff);
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+  }
+
+  .reveiew {
+    color: #11142d;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 19.2px */
+    width: 418.211px;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  h3 {
+    color: #11142d;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: 0.08px;
+    margin-bottom: -0.6em;
+  }
+
+  .position {
+    color: #92929d;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%; /* 18.2px */
+    letter-spacing: 0.112px;
   }
 `;
 

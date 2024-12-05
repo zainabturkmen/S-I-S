@@ -10,7 +10,7 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <Marquee>
+      <Marquee className="marquee">
         <div className="container">
           <div className="customer">
             <img src={star} />
@@ -59,6 +59,15 @@ const Wrapper = styled.div`
     font-weight: 600;
     line-height: 78px; /* 260% */
     margin-bottom: 0;
+  }
+
+  .marquee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    max-width: 9000px;
   }
 
   .reveiew {

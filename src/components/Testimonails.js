@@ -10,23 +10,42 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <div className="container">
-        <div className="customer">
-          <img src={star} />
-          <p className="reveiew">
-            We will also facilitate the business marketing of these products
-            with our SEO experts so that they become a ready to use website &
-            help sell product from company
-          </p>
-          <div className="user">
-            <img src={user} alt="user" />
-            <div className="user-info">
-              <h3>Amir Uddin</h3>
-              <p className="position">UX Designer </p>
+      <Marquee>
+        <div className="container">
+          <div className="customer">
+            <img src={star} />
+            <p className="reveiew">
+              We will also facilitate the business marketing of these products
+              with our SEO experts so that they become a ready to use website &
+              help sell product from company
+            </p>
+            <div className="user">
+              <img src={user} alt="user" />
+              <div className="user-info">
+                <h3>Amir Uddin</h3>
+                <p className="position">UX Designer </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div className="container">
+          <div className="customer">
+            <img src={star} />
+            <p className="reveiew">
+              We will also facilitate the business marketing of these products
+              with our SEO experts so that they become a ready to use website &
+              help sell product from company
+            </p>
+            <div className="user">
+              <img src={user} alt="user" />
+              <div className="user-info">
+                <h3>Amir Uddin</h3>
+                <p className="position">UX Designer </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Marquee>
     </Wrapper>
   );
 };
@@ -41,7 +60,6 @@ const Wrapper = styled.div`
     line-height: 78px; /* 260% */
     margin-bottom: 0;
   }
-
 
   .reveiew {
     color: var(--Light-Text-Color-Title, #11142d);

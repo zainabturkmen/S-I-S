@@ -22,6 +22,11 @@ import image7 from "../assets/Image (7).png";
 import image8 from "../assets/Image (8).png";
 import image9 from "../assets/Image (9).png";
 
+import star from "../assets/Shape.svg";
+import user from "../assets/Ellipse 74.svg";
+import user1 from "../assets/Ellipse 74 (1).svg";
+import user2 from "../assets/Ellipse 74 (2).svg";
+
 export const links = [
   {
     id: 1,
@@ -115,6 +120,17 @@ export const services2 = [
     icon: <PiVideoLight />,
     title: "Videography",
     text: "Create a platform with the best and coolest quality from us.",
+  },
+];
+
+const testimonails = [
+  {
+    id: 1,
+    star: star,
+    text: "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company",
+    user: user,
+    name: "Amir Uddin",
+    position: "UX Designer ",
   },
 ];
 

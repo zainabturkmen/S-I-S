@@ -12,12 +12,30 @@ import {
   image9,
 } from "../components/data";
 
+const images = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+];
+
 const Projects = () => {
   return (
     <Wrapper>
       <div className="container">
         <h1>My Projects</h1>
-        <div className="img-container">
+
+        {images.map((image, index) => {
+          <div className="img-container">
+            <img src={ image} alt="mage" />
+          </div>;
+        })}
+        {/* <div className="img-container">
           <img src={image1} alt="image1" />
           <img src={image2} alt="image2" />
           <img src={image3} alt="image3" />
@@ -27,7 +45,7 @@ const Projects = () => {
           <img src={image7} alt="image7" />
           <img src={image8} alt="image8" />
           <img src={image9} alt="image9" />
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   );

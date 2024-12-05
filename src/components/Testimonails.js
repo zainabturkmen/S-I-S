@@ -1,12 +1,26 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import { testimonails } from "./data";
 import { useState } from "react";
 import Slider from "react-slick";
+import { BiArrowToRight } from "react-icons/bi";
+import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
-  const NextArrow = ({ onClick }) => {};
-  const PrevArrow = () => {};
+  const NextArrow = ({ onClick }) => {
+    return (
+      <div className="arrow" onClick={onClick}>
+        <BiArrowToRight />
+      </div>
+    );
+  };
+  const PrevArrow = ({ onClick }) => {
+    return (
+      <div className="arrow-left" onClick={onClick}>
+        <BiArrowToLeft />
+      </div>
+    );
+  };
 
   const settings = {
     Infinite: true,
@@ -64,7 +78,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    line-height: 120%; 
+    line-height: 120%;
     width: 418.211px;
   }
 
@@ -97,7 +111,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; 
+    line-height: 140%;
     width: 418.211px;
   }
 
@@ -113,7 +127,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 120%; 
+    line-height: 120%;
     letter-spacing: 0.08px;
     margin-bottom: -0.6em;
   }
@@ -123,7 +137,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
-    line-height: 130%; 
+    line-height: 130%;
     letter-spacing: 0.112px;
   }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { MdGraphicEq } from "react-icons/md";
 import { useState } from "react";
-
+import Slider from "react-slick";
 import { services2 } from "./data";
 
 const Services = () => {

@@ -30,22 +30,11 @@ const Projects = () => {
       <div className="container">
         <h1>My Projects</h1>
 
-        {images.map((image, index) => {
-          <div className="img-container">
-            <img src={ image} alt="mage" />
-          </div>;
-        })}
-        {/* <div className="img-container">
-          <img src={image1} alt="image1" />
-          <img src={image2} alt="image2" />
-          <img src={image3} alt="image3" />
-          <img src={image4} alt="image4" />
-          <img src={image5} alt="image5" />
-          <img src={image6} alt="image6" />
-          <img src={image7} alt="image7" />
-          <img src={image8} alt="image8" />
-          <img src={image9} alt="image9" />
-        </div> */}
+        <div className="img-container">
+          {images.map((image, index) => {
+            return <img src={image} alt="mage" />;
+          })}
+        </div>
       </div>
     </Wrapper>
   );

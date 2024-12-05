@@ -5,6 +5,8 @@ import star from "../assets/Shape.svg";
 import user from "../assets/Ellipse 74.svg";
 import user1 from "../assets/Ellipse 74 (1).svg";
 import user2 from "../assets/Ellipse 74 (2).svg";
+import { Testimonails } from "./data";
+
 
 const Testimonails = () => {
   return (

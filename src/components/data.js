@@ -132,6 +132,22 @@ export const testimonails = [
     name: "Amir Uddin",
     position: "UX Designer ",
   },
+  {
+    id: 2,
+    star: star,
+    text: "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company",
+    user: user1,
+    name: "Salim Ahmed",
+    position: "UI Designer  ",
+  },
+  {
+    id: 2,
+    star: star,
+    text: "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company",
+    user: user2,
+    name: "Guy Hawkins",
+    position: "UI Designer  ",
+  },
 ];
 
 export {

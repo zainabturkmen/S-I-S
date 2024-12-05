@@ -11,24 +11,26 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      {testimonails.map((testimonail) => {
-        const { id, star, text, user, name, position } = testimonail;
-        return (
-          <div className="container" key={id}>
-            <div className="customer">
-              <img src={star} />
-              <p className="reveiew">{text}</p>
-              <div className="user">
-                <img src={user} alt="user" />
-                <div className="user-info">
-                  <h3>{name}</h3>
-                  <p className="position">{position}</p>
+      <div className="main-div">
+        {testimonails.map((testimonail) => {
+          const { id, star, text, user, name, position } = testimonail;
+          return (
+            <div className="container" key={id}>
+              <div className="customer">
+                <img src={star} />
+                <p className="reveiew">{text}</p>
+                <div className="user">
+                  <img src={user} alt="user" />
+                  <div className="user-info">
+                    <h3>{name}</h3>
+                    <p className="position">{position}</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </Wrapper>
   );
 };
@@ -42,15 +44,6 @@ const Wrapper = styled.div`
     font-weight: 600;
     line-height: 78px; /* 260% */
     margin-bottom: 0;
-  }
-
-  .marquee {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    max-width: 9000px;
   }
 
   .reveiew {
@@ -69,6 +62,11 @@ const Wrapper = styled.div`
     }
   }
 
+  .main-div {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
   .container {
     width: 420px;
     height: 177px;

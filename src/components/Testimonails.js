@@ -1,35 +1,48 @@
 import React from "react";
 import styled from "styled-components";
-import Marquee from "react-fast-marquee";
-import star from "../assets/Shape.svg";
-import user from "../assets/Ellipse 74.svg";
-import user1 from "../assets/Ellipse 74 (1).svg";
-import user2 from "../assets/Ellipse 74 (2).svg";
 import { testimonails } from "./data";
+import { useState } from "react";
+import Slider from "react-slick";
 
 const Testimonails = () => {
+  const NextArrow = ({ onClick }) => {};
+  const PrevArrow = () => {};
+
+  const settings = {
+    Infinite: true,
+    lazyLoad: true,
+    speed: 300,
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: 0,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
       <div className="main-div">
-        {testimonails.map((testimonail) => {
-          const { id, star, text, user, name, position } = testimonail;
-          return (
-            <div className="container" key={id}>
-              <div className="customer">
-                <img src={star} />
-                <p className="reveiew">{text}</p>
-                <div className="user">
-                  <img src={user} alt="user" />
-                  <div className="user-info">
-                    <h3>{name}</h3>
-                    <p className="position">{position}</p>
+        <Slider {...settings}>
+          {testimonails.map((testimonail) => {
+            const { id, star, text, user, name, position } = testimonail;
+            return (
+              <div className="container" key={id}>
+                <div className="customer">
+                  <img src={star} />
+                  <p className="reveiew">{text}</p>
+                  <div className="user">
+                    <img src={user} alt="user" />
+                    <div className="user-info">
+                      <h3>{name}</h3>
+                      <p className="position">{position}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </Slider>
       </div>
     </Wrapper>
   );
@@ -42,7 +55,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
-    line-height: 78px; /* 260% */
+    line-height: 78px;
     margin-bottom: 0;
   }
 
@@ -51,7 +64,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
-    line-height: 120%; /* 16.8px */
+    line-height: 120%; 
     width: 418.211px;
   }
 
@@ -66,6 +79,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 2em;
+    justify-content: center;
+    align-items: center;
   }
   .container {
     width: 420px;
@@ -82,7 +97,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; /* 19.2px */
+    line-height: 140%; 
     width: 418.211px;
   }
 
@@ -98,7 +113,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
-    line-height: 120%; /* 19.2px */
+    line-height: 120%; 
     letter-spacing: 0.08px;
     margin-bottom: -0.6em;
   }
@@ -108,7 +123,7 @@ const Wrapper = styled.div`
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
-    line-height: 130%; /* 18.2px */
+    line-height: 130%; 
     letter-spacing: 0.112px;
   }
 `;

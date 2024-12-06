@@ -20,7 +20,7 @@ const Testimonails = () => {
         <BiArrowToLeft />
       </div>
     );
-  };
+  }; 
 
   const settings = {
     Infinite: true,

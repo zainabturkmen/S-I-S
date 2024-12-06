@@ -40,8 +40,8 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      {/* <div className="main-div"> */}
       <Slider {...settings}>
+      <div className="main-div">
         {testimonails.map((testimonail) => {
           const { id, star, text, user, name, position } = testimonail;
           return (
@@ -60,8 +60,8 @@ const Testimonails = () => {
             </div>
           );
         })}
+      </div>
       </Slider>
-      {/* </div> */}
     </Wrapper>
   );
 };
@@ -87,11 +87,11 @@ const Wrapper = styled.div`
   }
 
   .main-div {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     gap: 2em;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
   }
   .container {
     width: 400px;

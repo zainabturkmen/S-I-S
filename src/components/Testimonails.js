@@ -10,8 +10,6 @@ import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
-
-
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow" onClick={onClick}>
@@ -19,7 +17,6 @@ const Testimonails = () => {
       </div>
     );
   };
-
 
   const PrevArrow = ({ onClick }) => {
     return (
@@ -43,28 +40,28 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <div className="main-div">
-        <Slider {...settings}>
-          {testimonails.map((testimonail) => {
-            const { id, star, text, user, name, position } = testimonail;
-            return (
-              <div className="container" key={id}>
-                <div className="customer">
-                  <img src={star} />
-                  <p className="reveiew">{text}</p>
-                  <div className="user">
-                    <img src={user} alt="user" />
-                    <div className="user-info">
-                      <h3>{name}</h3>
-                      <p className="position">{position}</p>
-                    </div>
+      {/* <div className="main-div"> */}
+      <Slider {...settings}>
+        {testimonails.map((testimonail) => {
+          const { id, star, text, user, name, position } = testimonail;
+          return (
+            <div className="container" key={id}>
+              <div className="customer">
+                <img src={star} />
+                <p className="reveiew">{text}</p>
+                <div className="user">
+                  <img src={user} alt="user" />
+                  <div className="user-info">
+                    <h3>{name}</h3>
+                    <p className="position">{position}</p>
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </Slider>
-      </div>
+            </div>
+          );
+        })}
+      </Slider>
+      {/* </div> */}
     </Wrapper>
   );
 };
@@ -87,13 +84,6 @@ const Wrapper = styled.div`
     font-weight: 400;
     line-height: 120%;
     width: 418.211px;
-  }
-
-  @media (min-width: 1000px) {
-    h1 {
-      font-size: 40px;
-      font-weight: 600;
-    }
   }
 
   .main-div {
@@ -146,6 +136,13 @@ const Wrapper = styled.div`
     font-weight: 500;
     line-height: 130%;
     letter-spacing: 0.112px;
+  }
+
+  @media (min-width: 1000px) {
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+    }
   }
 `;
 

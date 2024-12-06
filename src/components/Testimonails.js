@@ -3,10 +3,15 @@ import styled from "styled-components";
 import { testimonails } from "./data";
 import { useState } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
+
+
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow" onClick={onClick}>
@@ -14,6 +19,8 @@ const Testimonails = () => {
       </div>
     );
   };
+
+
   const PrevArrow = ({ onClick }) => {
     return (
       <div className="arrow-left" onClick={onClick}>
@@ -23,7 +30,7 @@ const Testimonails = () => {
   };
 
   const settings = {
-    Infinite: true,
+    infinite: true,
     lazyLoad: true,
     speed: 300,
     slidesToShow: 3,
@@ -90,14 +97,14 @@ const Wrapper = styled.div`
   }
 
   .main-div {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     gap: 2em;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
   .container {
-    width: 420px;
+    width: 400px;
     height: 177px;
     border-radius: 8px;
     background-color: red;

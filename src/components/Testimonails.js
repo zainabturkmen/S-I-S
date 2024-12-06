@@ -10,6 +10,8 @@ import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
+  const [imageIndex, setImageIndex] = useState(0);
+
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow" onClick={onClick}>
@@ -30,11 +32,12 @@ const Testimonails = () => {
     infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 3, // Number of visible slides
-    centerMode: true, // Enable centering
-    centerPadding: "50px", // Adjust space around the centered slide
+    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "50px",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    beforeChange: (current, next) => setImageIndex(next),
   };
 
   return (
@@ -42,18 +45,23 @@ const Testimonails = () => {
       <h1>Hear from our customers</h1>
       <div className="main-div">
         <Slider {...settings}>
-          {testimonails.map((testimonail) => {
+          {testimonails.map((testimonail, index) => {
             const { id, star, text, user, name, position } = testimonail;
             return (
-              <div className="container" key={id}>
-                <div className="customer">
-                  <img src={star} />
-                  <p className="reveiew">{text}</p>
-                  <div className="user">
-                    <img src={user} alt="user" />
-                    <div className="user-info">
-                      <h3>{name}</h3>
-                      <p className="position">{position}</p>
+              <div
+                className={
+                  index === imageIndex ? "slide activeSlide" : "slide"
+                }>
+                <div className="container" key={id}>
+                  <div className="customer">
+                    <img src={star} />
+                    <p className="reveiew">{text}</p>
+                    <div className="user">
+                      <img src={user} alt="user" />
+                      <div className="user-info">
+                        <h3>{name}</h3>
+                        <p className="position">{position}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -69,17 +77,28 @@ const Testimonails = () => {
 const Wrapper = styled.div`
   .main-div {
     display: flex;
-    justify-content: center; /* Center the slider horizontally */
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
 
   .slick-slider {
-    width: 100%; /* Adjust width to create white space */
+    width: 100%;
     max-width: 1250px;
   }
 
   .slick-slide {
-    padding: 10px; /* Space around individual slides */
+    padding: 10px;
+  }
+
+  .slide {
+    transform: scale(0.4);
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
   }
 
   h1 {

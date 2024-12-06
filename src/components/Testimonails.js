@@ -30,9 +30,9 @@ const Testimonails = () => {
     infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 3,
-    centerMode: true,
-    centerPadding: 0,
+    slidesToShow: 3, // Number of visible slides
+    centerMode: true, // Enable centering
+    centerPadding: "50px", // Adjust space around the centered slide
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
@@ -40,33 +40,48 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <Slider {...settings}>
       <div className="main-div">
-        {testimonails.map((testimonail) => {
-          const { id, star, text, user, name, position } = testimonail;
-          return (
-            <div className="container" key={id}>
-              <div className="customer">
-                <img src={star} />
-                <p className="reveiew">{text}</p>
-                <div className="user">
-                  <img src={user} alt="user" />
-                  <div className="user-info">
-                    <h3>{name}</h3>
-                    <p className="position">{position}</p>
+        <Slider {...settings}>
+          {testimonails.map((testimonail) => {
+            const { id, star, text, user, name, position } = testimonail;
+            return (
+              <div className="container" key={id}>
+                <div className="customer">
+                  <img src={star} />
+                  <p className="reveiew">{text}</p>
+                  <div className="user">
+                    <img src={user} alt="user" />
+                    <div className="user-info">
+                      <h3>{name}</h3>
+                      <p className="position">{position}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </Slider>
       </div>
-      </Slider>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  .main-div {
+    display: flex;
+    justify-content: center; /* Center the slider horizontally */
+    align-items: center; 
+  }
+
+  .slick-slider {
+    width: 100%; /* Adjust width to create white space */
+    max-width: 1250px;
+  }
+
+  .slick-slide {
+    padding: 10px; /* Space around individual slides */
+  }
+
   h1 {
     text-align: center;
     margin-top: 2em;
@@ -86,13 +101,6 @@ const Wrapper = styled.div`
     width: 418.211px;
   }
 
-  .main-div {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    justify-content: center;
-    align-items: center;
-  }
   .container {
     width: 400px;
     height: 177px;

@@ -75,7 +75,9 @@ const Testimonails = () => {
 };
 
 const Wrapper = styled.div`
-  .main-div {
+
+
+  /* .main-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +102,7 @@ const Wrapper = styled.div`
     transition: transform 300ms;
     opacity: 0.5;
     width: 100%;
-  }
+  } */
 
   /* .activeSlide {
     transform: scale(1.1);

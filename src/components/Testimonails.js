@@ -83,7 +83,12 @@ const Wrapper = styled.div`
 
   .slick-slider {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .slick-slide {
@@ -91,15 +96,17 @@ const Wrapper = styled.div`
   }
 
   .slide {
-    transform: scale(0.4);
+    transform: scale(0.6);
     transition: transform 300ms;
     opacity: 0.5;
+
   }
 
-  .activeSlide {
+  /* .activeSlide {
     transform: scale(1.1);
     opacity: 1;
-  }
+    align-items: center;
+  } */
 
   h1 {
     text-align: center;

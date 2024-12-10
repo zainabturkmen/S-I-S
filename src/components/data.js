@@ -141,7 +141,7 @@ export const testimonails = [
     position: "UI Designer  ",
   },
   {
-    id: 2,
+    id: 3,
     star: star,
     text: "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company",
     user: user2,

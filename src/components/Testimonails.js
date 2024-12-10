@@ -10,7 +10,7 @@ import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
-  const [imageIndex, setImageIndex] = useState(2);
+  const [imageIndex, setImageIndex] = useState(1);
 
   const NextArrow = ({ onClick }) => {
     return (
@@ -34,7 +34,7 @@ const Testimonails = () => {
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: "50px",
+    centerPadding: "0",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImageIndex(next),

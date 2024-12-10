@@ -91,8 +91,8 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
-  .slick-slide {
-    padding: 10px;
+  .slick-slide {                                                                                                                
+    margin: 0;
   }
 
   .slide {

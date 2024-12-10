@@ -34,7 +34,7 @@ const Testimonails = () => {
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
-    // centerPadding: "50px",
+    centerPadding: "50px",
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImageIndex(next),

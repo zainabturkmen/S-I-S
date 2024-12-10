@@ -52,7 +52,7 @@ const Testimonails = () => {
                 className={
                   index === imageIndex ? "slide activeSlide" : "slide"
                 }>
-                <div className="container" key={id}>
+                 <div className="container" key={id}>
                   <div className="customer">
                     <img src={star} />
                     <p className="reveiew">{text}</p>
@@ -83,7 +83,7 @@ const Wrapper = styled.div`
 
   .slick-slider {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -96,10 +96,10 @@ const Wrapper = styled.div`
   }
 
   .slide {
-    transform: scale(0.6);
+    transform: scale(0.5);
     transition: transform 300ms;
     opacity: 0.5;
-
+    width: 100%;
   }
 
   /* .activeSlide {

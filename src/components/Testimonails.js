@@ -52,7 +52,7 @@ const Testimonails = () => {
                 className={
                   index === imageIndex ? "slide activeSlide" : "slide"
                 }>
-                 <div className="container" key={id}>
+                <div className="container" key={id}>
                   <div className="customer">
                     <img src={star} />
                     <p className="reveiew">{text}</p>
@@ -76,36 +76,21 @@ const Testimonails = () => {
 
 const Wrapper = styled.div`
   .main-div {
- /* width: 65%; */
- margin: 0 auto;
+    width: 65%;
+    margin: 0 auto;
   }
 
-  /* .slick-slider {
-    width: 100%;
-    max-width: 1250px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  } */
-
-  /* .slick-slide {                                                                                                                
-    margin: 0;
-  } */
-
-  /* .slide {
+  .slide {
     transform: scale(0.4);
     transition: transform 300ms;
     opacity: 0.5;
-    width: 100%;
-  } */
+  }
 
-  /* .activeSlide {
+  .activeSlide {
     transform: scale(1.1);
     opacity: 1;
-    align-items: center;
-  } */
+    /* align-items: center; */
+  }
 
   h1 {
     text-align: center;
@@ -128,7 +113,8 @@ const Wrapper = styled.div`
 
   .container {
     width: 400px;
-    /* height: 177px; */
+    height: 177px;
+    margin: 0 auto;
     border-radius: 8px;
     background-color: red;
     padding: 2em;

@@ -10,7 +10,7 @@ import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
-  const [imageIndex, setImageIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(2);
 
   const NextArrow = ({ onClick }) => {
     return (
@@ -84,6 +84,10 @@ const Wrapper = styled.div`
     transform: scale(0.4);
     transition: transform 300ms;
     opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .activeSlide {

@@ -75,15 +75,12 @@ const Testimonails = () => {
 };
 
 const Wrapper = styled.div`
-
-
-  /* .main-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .main-div {
+ /* width: 65%; */
+ margin: 0 auto;
   }
 
-  .slick-slider {
+  /* .slick-slider {
     width: 100%;
     max-width: 1250px;
     margin: 0 auto;
@@ -91,14 +88,14 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .slick-slide {                                                                                                                
+  /* .slick-slide {                                                                                                                
     margin: 0;
-  }
+  } */
 
-  .slide {
-    transform: scale(0.5);
+  /* .slide {
+    transform: scale(0.4);
     transition: transform 300ms;
     opacity: 0.5;
     width: 100%;
@@ -131,7 +128,7 @@ const Wrapper = styled.div`
 
   .container {
     width: 400px;
-    height: 177px;
+    /* height: 177px; */
     border-radius: 8px;
     background-color: red;
     padding: 2em;

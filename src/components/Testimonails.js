@@ -10,14 +10,14 @@ import { BiArrowToRight } from "react-icons/bi";
 import { BiArrowToLeft } from "react-icons/bi";
 
 const Testimonails = () => {
-  const [imageIndex, setImageIndex] = useState(1);
+  const [imageIndex, setImageIndex] = useState(0);
 
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow" onClick={onClick}>
         <BiArrowToRight />
       </div>
-    );
+    ); 
   };
 
   const PrevArrow = ({ onClick }) => {
@@ -81,7 +81,7 @@ const Wrapper = styled.div`
   }
 
   .slide {
-    transform: scale(0.4);
+    transform: scale(0.2);
     transition: transform 300ms;
     opacity: 0.5;
     display: flex;

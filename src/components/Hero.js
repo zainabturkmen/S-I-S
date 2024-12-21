@@ -38,10 +38,10 @@ const Hero = () => {
             Motion Graphics
           </h3>
           <div className="bt-div">
-            <a href="#" className="contact">
+            <a href="#contact" className="contact">
               Contact Me
             </a>
-            <a href="#" className="portfolio">
+            <a href="#projects" className="portfolio">
               View Portfolios{" "}
               <span>
                 <LuArrowUpRight />

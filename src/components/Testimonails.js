@@ -12,8 +12,7 @@ const Testimonails = () => {
         {testimonails.map((testimonail, index) => {
           const { id, star, text, user, name, position } = testimonail;
           return (
-            <div
-              className={index === imageIndex ? "slide activeSlide" : "slide"}>
+            <div>
               <div className="container" key={id}>
                 <div className="customer">
                   <img src={star} />

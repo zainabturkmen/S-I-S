@@ -31,37 +31,37 @@ export const links = [
   {
     id: 1,
     text: "Home",
-    url: "/",
+    url: "#home",
     icon: <IoHomeOutline />,
   },
   {
     id: 2,
     text: "About",
-    url: "/about",
+    url: "#about",
     icon: <LuScrollText />,
   },
   {
     id: 3,
     text: "Services",
-    url: "/services",
+    url: "#services",
     icon: <GrServices />,
   },
   {
     id: 4,
     text: "Projects",
-    url: "/projects",
+    url: "#projects",
     icon: <BsCalendar2Plus />,
   },
   {
     id: 5,
     text: "Testimonails",
-    url: "/testimonails",
+    url: "#testimonails",
     icon: <BiCommentCheck />,
   },
   {
     id: 6,
     text: "Contact",
-    url: "/contact",
+    url: "#contact",
     icon: <MdOutlinePhone />,
   },
 ];

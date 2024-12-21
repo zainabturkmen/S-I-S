@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Contact = () => {
   return (
     <Wrapper id="contact">
-      <div>Contact</div>;
+      <div>
+        
+      </div>;
     </Wrapper>
   );
 };

@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   .main-container {
     display: flex;
     flex-direction: row;
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: 0 auto;
   }
 

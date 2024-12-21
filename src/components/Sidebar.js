@@ -40,13 +40,13 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               <p>&copy; {currentYear}. All Rights Reserved</p>
             </div>
             <ul className="links">
-              <a href="#" className="social">
+              <a href="https://www.facebook.com" className="social">
                 <GrFacebookOption />
               </a>
-              <a href="#" className="social">
+              <a href="https://www.x.com" className="social">
                 <FaTwitter />
               </a>
-              <a href="#" className="social">
+              <a href="https://www.linkedin.com" className="social">
                 <TfiLinkedin />
               </a>
             </ul>

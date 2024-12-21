@@ -38,8 +38,8 @@ const Testimonails = () => {
 
 const Wrapper = styled.div`
   .main-div {
-    width: 65%;
-    margin: 0 auto;
+    /* width: 65%;
+    margin: 0 auto; */
   }
 
   h1 {
@@ -64,7 +64,7 @@ const Wrapper = styled.div`
   .container {
     width: 400px;
     height: 177px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 8px;
     background-color: red;
     padding: 2em;

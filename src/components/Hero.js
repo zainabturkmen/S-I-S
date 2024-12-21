@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className="bottom">
           <div className="img-container">
-            <img src={image} alt="i" />
+            <img src={image} alt="" />
           </div>
           <div className="follow">
             <p className="p">Follow me on: </p>

@@ -9,7 +9,7 @@ const Testimonails = () => {
     <Wrapper>
       <h1>Hear from our customers</h1>
       <div className="main-container">
-        <Marquee className="marquee">
+        <Marquee className="marquee" pauseOnHover speed={50} loop={0}>
           {testimonails.map((testimonail) => {
             const { id, star, text, user, name, position } = testimonail;
             return (
@@ -37,14 +37,9 @@ const Testimonails = () => {
 const Wrapper = styled.div`
   .main-container {
     display: flex;
-    flex-direction: column;
-  }
-
-  .marquee {
-    display: flex; /* Enable flexbox for horizontal layout */
-    justify-content: center; /* Center the cards horizontally */
-    align-items: center; /* Center the cards vertically */
-    gap: 2rem; /* Add spacing between the cards */
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   h1 {
@@ -74,6 +69,7 @@ const Wrapper = styled.div`
     padding: 2em;
     background: var(--Light-Base-Color-White, #fff);
     filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+    margin: 1em;
   }
 
   .reveiew {

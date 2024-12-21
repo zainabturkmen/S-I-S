@@ -42,7 +42,7 @@ const Hero = () => {
               Contact Me
             </a>
             <a href="#projects" className="portfolio">
-              View Portfolios
+              View Portfolios{" "}
               <span>
                 <LuArrowUpRight />
               </span>
@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className="bottom">
           <div className="img-container">
-            <img src={image} alt="" />
+            <img src={image} alt="image" />
           </div>
           <div className="follow">
             <p className="p">Follow me on: </p>

@@ -14,7 +14,7 @@ const Testimonails = () => {
             return (
               <div className="container" key={id}>
                 <div className="customer">
-                  <img src={star} />
+                  <img src={star} alt="stars"/>
                   <p className="reveiew">{text}</p>
                   <div className="user">
                     <img src={user} alt="user" />

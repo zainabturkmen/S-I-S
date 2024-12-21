@@ -94,7 +94,7 @@ const Wrapper = styled.div`
     letter-spacing: 0.112px;
   }
 
-  /* @media (min-width: 1500px) {
+  @media (min-width: 1500px) {
     .main-container {
       display: flex;
       flex-direction: row;
@@ -157,7 +157,7 @@ const Wrapper = styled.div`
       line-height: 130%;
       letter-spacing: 0.112px;
     }
-  } */
+  }
 `;
 
 export default Testimonails;

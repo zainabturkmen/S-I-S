@@ -5,7 +5,7 @@ import image from "../assets/image.png";
 import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
 import { FaTwitter } from "react-icons/fa";
-import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { services } from "./data";
 
 const Hero = () => {

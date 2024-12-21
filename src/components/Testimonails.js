@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { testimonails } from "./data";
-import { useState } from "react";
 import Marquee from "react-fast-marquee";
 
 const Testimonails = () => {

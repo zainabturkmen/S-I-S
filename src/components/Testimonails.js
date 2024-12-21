@@ -8,38 +8,43 @@ const Testimonails = () => {
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
-      <div className="main-div">
-        {testimonails.map((testimonail) => {
-          const { id, star, text, user, name, position } = testimonail;
-          return (
-            <div>
-              <Marquee>
-                <div className="container" key={id}>
-                  <div className="customer">
-                    <img src={star} />
-                    <p className="reveiew">{text}</p>
-                    <div className="user">
-                      <img src={user} alt="user" />
-                      <div className="user-info">
-                        <h3>{name}</h3>
-                        <p className="position">{position}</p>
-                      </div>
+      <div className="main-container">
+        <Marquee className="marquee">
+          {testimonails.map((testimonail) => {
+            const { id, star, text, user, name, position } = testimonail;
+            return (
+              <div className="container" key={id}>
+                <div className="customer">
+                  <img src={star} />
+                  <p className="reveiew">{text}</p>
+                  <div className="user">
+                    <img src={user} alt="user" />
+                    <div className="user-info">
+                      <h3>{name}</h3>
+                      <p className="position">{position}</p>
                     </div>
                   </div>
                 </div>
-              </Marquee>
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+        </Marquee>
       </div>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  .main-div {
-    /* width: 65%;
-    margin: 0 auto; */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .marquee {
+    display: flex; /* Enable flexbox for horizontal layout */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+    gap: 2rem; /* Add spacing between the cards */
   }
 
   h1 {
@@ -64,7 +69,6 @@ const Wrapper = styled.div`
   .container {
     width: 400px;
     height: 177px;
-    /* margin: 0 auto; */
     border-radius: 8px;
     background-color: red;
     padding: 2em;

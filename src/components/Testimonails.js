@@ -112,7 +112,10 @@ const Wrapper = styled.div`
       font-size: 40px;
       font-weight: 600;
     }
+
   }
+
+
 `;
 
 export default Testimonails;

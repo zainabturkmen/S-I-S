@@ -44,8 +44,8 @@ const Wrapper = styled.div`
   .main-container {
     display: flex;
     flex-direction: row;
-    /* max-width: 300px; */
-    margin: 0 auto;
+    /* max-width: 1250px; */
+    /* margin: 0 auto; */
   }
 
   .container {
@@ -93,7 +93,6 @@ const Wrapper = styled.div`
     line-height: 130%;
     letter-spacing: 0.112px;
   }
-
 
   @media (min-width: 600px) {
     .main-container {

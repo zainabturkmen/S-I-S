@@ -409,11 +409,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 1500px) {
-    .bottom-container {
-      gap: 3.5em;
-    }
-  }
+
 `;
 
 export default Hero;

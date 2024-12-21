@@ -94,7 +94,8 @@ const Wrapper = styled.div`
     letter-spacing: 0.112px;
   }
 
-  @media (min-width: 1500px) {
+
+  @media (min-width: 1000px) {
     .main-container {
       display: flex;
       flex-direction: row;

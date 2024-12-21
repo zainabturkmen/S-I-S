@@ -9,7 +9,7 @@ const Testimonails = () => {
     <Wrapper>
       <h1>Hear from our customers</h1>
       <div className="main-div">
-        {testimonails.map((testimonail, index) => {
+        {testimonails.map((testimonail) => {
           const { id, star, text, user, name, position } = testimonail;
           return (
             <div>

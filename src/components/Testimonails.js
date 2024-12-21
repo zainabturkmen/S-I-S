@@ -35,87 +35,92 @@ const Testimonails = () => {
 };
 
 const Wrapper = styled.div`
-  .main-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1250px;
-    margin: 0 auto;
-  }
-
   h1 {
-    text-align: center;
-    margin-top: 2em;
-    font-family: Inter;
+    font-weight: 600;
     font-size: 30px;
-    font-weight: 600;
-    line-height: 78px;
-    margin-bottom: 0;
-  }
-
-  .reveiew {
-    color: var(--Light-Text-Color-Title, #11142d);
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 120%;
-    width: 418.211px;
-  }
-
-  .container {
-    width: 400px;
-    height: 177px;
-    border-radius: 8px;
-    background-color: red;
-    padding: 2em;
-    background: var(--Light-Base-Color-White, #fff);
-    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
-    margin: 1em;
-  }
-
-  .reveiew {
-    color: #11142d;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%;
-    width: 418.211px;
-  }
-
-  .user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-  }
-
-  h3 {
-    color: #11142d;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: 0.08px;
-    margin-bottom: -0.6em;
-  }
-
-  .position {
-    color: #92929d;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: 0.112px;
   }
 
   @media (min-width: 1000px) {
+  }
+
+  @media (min-width: 1500px) {
     h1 {
       font-size: 40px;
       font-weight: 600;
     }
 
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 2em;
+      font-family: Inter;
+      line-height: 78px;
+      margin-bottom: 0;
+      font-size: 40px;
+      font-weight: 600;
+    }
+
+    .reveiew {
+      color: var(--Light-Text-Color-Title, #11142d);
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      width: 418.211px;
+    }
+
+    .container {
+      width: 400px;
+      height: 177px;
+      border-radius: 8px;
+      background-color: red;
+      padding: 2em;
+      background: var(--Light-Base-Color-White, #fff);
+      filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+      margin: 1em;
+    }
+
+    .reveiew {
+      color: #11142d;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      width: 418.211px;
+    }
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1em;
+    }
+
+    h3 {
+      color: #11142d;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 0.08px;
+      margin-bottom: -0.6em;
+    }
+
+    .position {
+      color: #92929d;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0.112px;
+    }
   }
-
-
 `;
 
 export default Testimonails;

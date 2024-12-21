@@ -408,8 +408,6 @@ const Wrapper = styled.div`
       margin-left: -1em;
     }
   }
-
-
 `;
 
 export default Hero;

@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 const Testimonails = () => {
   return (
     <Wrapper>
-      <h1>Hear from our customers</h1>
+      <h1>Testimonails</h1>
       <div className="main-container">
         <Marquee className="marquee" pauseOnHover speed={50} loop={0}>
           {testimonails.map((testimonail) => {
@@ -35,21 +35,69 @@ const Testimonails = () => {
 };
 
 const Wrapper = styled.div`
+
   h1 {
     font-weight: 600;
     font-size: 30px;
+    text-align: center  ;
+    margin-top: 2em;
   }
 
-  @media (min-width: 1000px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
 
-  @media (min-width: 1500px) {
-    h1 {
-      font-size: 40px;
-      font-weight: 600;
-    }
+  .container {
+    width: 185px;
+    height: 260px;
+    border-radius: 8px;
+    background-color: red;
+    padding: 2em;
+    background: var(--Light-Base-Color-White, #fff);
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+    margin: 1em;
+  }
 
+  .reveiew {
+    color: #11142d;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    width: 200px;
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  h3 {
+    color: #11142d;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.08px;
+    margin-bottom: -0.6em;
+  }
+
+  .position {
+    color: #92929d;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.112px;
+  }
+
+  /* @media (min-width: 1500px) {
     .main-container {
       display: flex;
       flex-direction: row;
@@ -66,7 +114,6 @@ const Wrapper = styled.div`
       font-size: 40px;
       font-weight: 600;
     }
-
 
     .container {
       width: 400px;
@@ -113,7 +160,7 @@ const Wrapper = styled.div`
       line-height: 130%;
       letter-spacing: 0.112px;
     }
-  }
+  } */
 `;
 
 export default Testimonails;

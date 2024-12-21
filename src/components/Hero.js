@@ -133,7 +133,7 @@ const Wrapper = styled.div`
     font-size: 0.8em;
     font-weight: 400;
     line-height: 201%; /* 24.12px */
-    width: 390px;
+    width: 300px;
     margin-top: -0.5em;
   }
 

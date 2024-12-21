@@ -43,6 +43,7 @@ const Wrapper = styled.div`
   @media (min-width: 1000px) {
   }
 
+
   @media (min-width: 1500px) {
     h1 {
       font-size: 40px;
@@ -66,14 +67,6 @@ const Wrapper = styled.div`
       font-weight: 600;
     }
 
-    .reveiew {
-      color: var(--Light-Text-Color-Title, #11142d);
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 120%;
-      width: 418.211px;
-    }
 
     .container {
       width: 400px;

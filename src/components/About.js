@@ -4,7 +4,7 @@ import styled from "styled-components";
 const About = () => {
   return (
     <Wrapper>
-      <div className="container">
+      <div className="container" id="about">
         <div className="top">
           <p className="about">About me</p>
 

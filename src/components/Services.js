@@ -4,7 +4,7 @@ import { services2 } from "./data";
 
 const Services = () => {
   return (
-    <Wrapper>
+    <Wrapper id="services">
       <h1>My Services</h1>
       <div className="container">
         {services2.map((service) => {

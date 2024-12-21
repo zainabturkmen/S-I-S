@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <Wrapper id="contact">
+      <div>Contact</div>;
+    </Wrapper>
+  );
+};
 
-export default Contact
+const Wrapper = styled.div`
+  background-color: red;
+`;
+
+export default Contact;

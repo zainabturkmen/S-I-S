@@ -22,7 +22,7 @@ const Hero = () => {
   });
   return (
     <Wrapper>
-      <div className="container">
+      <div className="container" id="home">
         <div className="top">
           <p className="hello">Hello 👋</p>
           <h1>

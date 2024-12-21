@@ -26,13 +26,13 @@ const images = [
 
 const Projects = () => {
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <div className="container">
         <h1>My Projects</h1>
 
         <div className="img-container">
           {images.map((image, index) => {
-            return <img src={image} alt="mage" />;
+            return <img src={image} alt="mage" key={index} />;
           })}
         </div>
       </div>

@@ -13,19 +13,21 @@ const Testimonails = () => {
           const { id, star, text, user, name, position } = testimonail;
           return (
             <div>
-              <div className="container" key={id}>
-                <div className="customer">
-                  <img src={star} />
-                  <p className="reveiew">{text}</p>
-                  <div className="user">
-                    <img src={user} alt="user" />
-                    <div className="user-info">
-                      <h3>{name}</h3>
-                      <p className="position">{position}</p>
+              <Marquee>
+                <div className="container" key={id}>
+                  <div className="customer">
+                    <img src={star} />
+                    <p className="reveiew">{text}</p>
+                    <div className="user">
+                      <img src={user} alt="user" />
+                      <div className="user-info">
+                        <h3>{name}</h3>
+                        <p className="position">{position}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Marquee>
             </div>
           );
         })}

@@ -1,74 +1,35 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import { testimonails } from "./data";
 import { useState } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import { BiArrowToRight } from "react-icons/bi";
-import { BiArrowToLeft } from "react-icons/bi";
+import Marquee from "react-fast-marquee";
 
 const Testimonails = () => {
-  const [imageIndex, setImageIndex] = useState(0);
-
-  const NextArrow = ({ onClick }) => {
-    return (
-      <div className="arrow" onClick={onClick}>
-        <BiArrowToRight />
-      </div>
-    ); 
-  };
-
-  const PrevArrow = ({ onClick }) => {
-    return (
-      <div className="arrow-left" onClick={onClick}>
-        <BiArrowToLeft />
-      </div>
-    );
-  };
-
-  const settings = {
-    infinite: true,
-    lazyLoad: true,
-    speed: 300,
-    slidesToShow: 3,
-    centerMode: true,
-    centerPadding: "0",
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    beforeChange: (current, next) => setImageIndex(next),
-  };
-
   return (
     <Wrapper>
       <h1>Hear from our customers</h1>
       <div className="main-div">
-        <Slider {...settings}>
-          {testimonails.map((testimonail, index) => {
-            const { id, star, text, user, name, position } = testimonail;
-            return (
-              <div
-                className={
-                  index === imageIndex ? "slide activeSlide" : "slide"
-                }>
-                <div className="container" key={id}>
-                  <div className="customer">
-                    <img src={star} />
-                    <p className="reveiew">{text}</p>
-                    <div className="user">
-                      <img src={user} alt="user" />
-                      <div className="user-info">
-                        <h3>{name}</h3>
-                        <p className="position">{position}</p>
-                      </div>
+        {testimonails.map((testimonail, index) => {
+          const { id, star, text, user, name, position } = testimonail;
+          return (
+            <div
+              className={index === imageIndex ? "slide activeSlide" : "slide"}>
+              <div className="container" key={id}>
+                <div className="customer">
+                  <img src={star} />
+                  <p className="reveiew">{text}</p>
+                  <div className="user">
+                    <img src={user} alt="user" />
+                    <div className="user-info">
+                      <h3>{name}</h3>
+                      <p className="position">{position}</p>
                     </div>
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </Slider>
+            </div>
+          );
+        })}
       </div>
     </Wrapper>
   );
@@ -78,21 +39,6 @@ const Wrapper = styled.div`
   .main-div {
     width: 65%;
     margin: 0 auto;
-  }
-
-  .slide {
-    transform: scale(0.2);
-    transition: transform 300ms;
-    opacity: 0.5;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .activeSlide {
-    transform: scale(1.1);
-    opacity: 1;
   }
 
   h1 {

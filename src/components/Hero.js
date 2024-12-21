@@ -51,19 +51,19 @@ const Hero = () => {
         </div>
         <div className="bottom">
           <div className="img-container">
-            <img src={image} />
+            <img src={image} alt="image" />
           </div>
           <div className="follow">
             <p className="p">Follow me on: </p>
             <div className="line"></div>
             <ul className="links">
-              <a href="#" className="social">
+              <a href="https://www.facebook.com" className="social">
                 <GrFacebookOption />
               </a>
-              <a href="#" className="social">
+              <a href="https://www.x.com" className="social">
                 <FaTwitter />
               </a>
-              <a href="#" className="social">
+              <a href="https://www.linkedin.com" className="social">
                 <TfiLinkedin />
               </a>
             </ul>

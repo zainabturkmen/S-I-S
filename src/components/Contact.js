@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { MdOutlineCall } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 
 const Contact = () => {
   return (
     <Wrapper id="contact">
       <div>
         <div className="title">
-          <h1>Let’s Discuss Your Project</h1>
+          <h1>
+            Let’s Discuss Your <span>Project</span>
+          </h1>
           <p>
             Let’s make something new, different and more meaningful or make
             thing more visual or conceptual
@@ -20,8 +24,26 @@ const Contact = () => {
                 <MdOutlineCall />
               </div>
               <div className="info">
-                <p>call me</p>
+                <h3>call me</h3>
                 <h4>+93 73 112 8886</h4>
+              </div>
+            </div>
+            <div className="content-container">
+              <div className="icon">
+                <MdOutlineMail />
+              </div>
+              <div className="info">
+                <h3>Email me</h3>
+                <h4>sayedirfansadat2022@gmail.com</h4>
+              </div>
+            </div>
+            <div className="content-container">
+              <div className="icon">
+                <IoLocationOutline />
+              </div>
+              <div className="info">
+                <h3>Address</h3>
+                <h4>Kabul, Afghanistan</h4>
               </div>
             </div>
           </div>
@@ -33,6 +55,38 @@ const Contact = () => {
 };
 
 const Wrapper = styled.div`
+  margin-top: 2em;
+  h1 {
+    color: #0b0c0c;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 135% */
+    margin-bottom: 0;
+    span {
+      background: linear-gradient(
+        90deg,
+        rgba(79, 70, 229, 0.8) 0%,
+        #2c277f 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    color: #323433;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    width: 368.011px;
+    height: 56px;
+    margin: 0 auto;
+  }
   .title {
     display: flex;
     flex-direction: column;
@@ -52,18 +106,48 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2em;
+    gap: 1.4em;
   }
 
   .content-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     align-items: center;
+    gap: 1.5em;
+    width: 360px;
+    height: 96.2px;
+    border-radius: 8px;
+    background: var(--Light-Base-Color-White, #fff);
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.2));
+    padding: 0.5em 2em;
   }
 
   .icon {
-    width: 57px;
-    height: 57px;
+    background-color: red;
+    align-items: center;
+    padding: 0.7em 0.8em 0.3em 0.8em;
+    font-size: 1.7em;
+    border-radius: 0.6em;
+    background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
+    color: #fff;
+  }
+
+  h3 {
+    color: #92929d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px; /* 87.5% */
+    letter-spacing: 0.128px;
+  }
+  h4 {
+    color: #11142d;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+    letter-spacing: 0.08px;
+    margin-top: 0;
   }
 `;
 

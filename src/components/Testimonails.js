@@ -95,7 +95,7 @@ const Wrapper = styled.div`
   }
 
 
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
     .main-container {
       display: flex;
       flex-direction: row;

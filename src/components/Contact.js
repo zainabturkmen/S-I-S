@@ -70,12 +70,9 @@ const Contact = () => {
           </div>
           <div className="bottom">
             <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
+              <input type="text" name="user_name" placeholder="Full Name"/>
+              <input type="email" name="user_email" placeholder="Email"/>
+              <textarea name="message" placeholder="Message"/>
               <input type="submit" value="Send" />
             </form>
           </div>
@@ -180,6 +177,12 @@ const Wrapper = styled.div`
     line-height: 18px; /* 112.5% */
     letter-spacing: 0.08px;
     margin-top: 0;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
 

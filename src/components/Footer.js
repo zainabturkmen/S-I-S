@@ -58,7 +58,7 @@ const Wrapper = styled.div`
     a {
       background-color: #2c277f;
       color: white;
-      padding: 0.6em 0.5em .15em 0.5em;
+      padding: 0.5em 0.5em .15em 0.5em;
       font-size: 0.6em;
       border-radius: 3em;
     }

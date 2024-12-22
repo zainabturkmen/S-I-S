@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
           <div className="follow">
             <p className="p">Follow me on: </p>
-            <div className="line"></div>
+            {/* <div className="line"></div> */}
             <ul className="links">
               <a href="https://www.facebook.com" className="social">
                 <GrFacebookOption />
@@ -186,16 +186,16 @@ const Wrapper = styled.div`
   }
 
   img {
-    width: 360px;
+    width: 310px;
     border-radius: 2px;
   }
 
   .img-container:before {
     content: "";
     position: absolute;
-    top: 5.1em;
+    top: 4.3em;
     left: 2em;
-    width: 88%;
+    width: 84%;
     height: 76.8%;
     background: linear-gradient(
       152deg,
@@ -210,9 +210,9 @@ const Wrapper = styled.div`
   .img-container:after {
     content: "";
     position: absolute;
-    width: 315px;
-    top: 7em;
-    left: 0em;
+    width: 260px;
+    top: 5.9em;
+    left: .5em;
     height: 73%;
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);
@@ -237,12 +237,12 @@ const Wrapper = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  .line {
+  /* .line {
     width: 3em;
     height: 1px;
     background-color: #4f46e5;
     margin-left: 2em;
-  }
+  } */
 
   ul {
     display: flex;
@@ -332,11 +332,11 @@ const Wrapper = styled.div`
       margin-left: -2em;
     }
 
-    .line {
+    /* .line {
       width: 1px;
       height: 3em;
       margin-left: -0.1em;
-    }
+    } */
 
     .bottom-container {
       display: flex;

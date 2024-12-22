@@ -75,6 +75,6 @@ const Wrapper = styled.div`
       font-size: 1em;
     }
   }
-`;
+`;  
 
 export default Footer;

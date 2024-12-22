@@ -10,7 +10,7 @@ const About = () => {
 
           <h1>About Me</h1>
           <h3>
-            Experienced graphic designer with +5 years of experience proficient
+            Experienced graphic designer with +6 years of experience proficient
             in Adobe Creative Suite, brand identity development, typography,
             print and digital design, illustration, UI/UX design, photo editing,
             Motion design, visual communication, attention to detail,
@@ -73,10 +73,9 @@ const Wrapper = styled.div`
   .container {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 320px;
     margin: 0 auto;
     gap: 2em;
-    padding: 1em;
   }
 
   .top {
@@ -103,16 +102,22 @@ const Wrapper = styled.div`
 
   h3 {
     text-align: center;
-    font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 201%;
     margin-top: -2em;
-    /* width: 355px; */
+    width: 300px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .percentage-container {
-    width: 355px;
+    width: 300px;
     border-radius: 6px;
     background: #edecec;
     margin-top: -0.7em;
@@ -121,6 +126,7 @@ const Wrapper = styled.div`
   .title {
     display: flex;
     justify-content: space-between;
+    width: 300px;
   }
 
   .percentage,
@@ -133,26 +139,26 @@ const Wrapper = styled.div`
   }
 
   .percentage {
-    width: 340px;
+    width: 292px;
   }
   .percentage2 {
-    width: 320px;
+    width: 280px;
   }
   .percentage3 {
-    width: 335px;
+    width: 290px;
   }
   .percentage4 {
-    width: 305px;
+    width: 270px;
   }
 
   .number {
-    margin-right: -0.2em;
+    margin-right: 0em;
   }
   .number2 {
-    margin-right: 1em;
+    margin-right: 0.5em;
   }
   .number4 {
-    margin-right: 1.5em;
+    margin-right: 1em;
   }
 
   @media (min-width: 1000px) {

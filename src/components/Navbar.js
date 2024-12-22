@@ -78,6 +78,11 @@ const Wrapper = styled.div`
     }
   }
 
+  /* .active {
+    border-bottom: 2px solid #4f46e5;
+    color: #4f46e5;
+  } */
+
   h1 {
     font-family: "Edu AU VIC WA NT Pre", cursive;
     font-weight: 500;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import { LiaTimesSolid } from "react-icons/lia";
 import { links } from "./data";
 import { GrFacebookOption } from "react-icons/gr";
@@ -25,9 +26,16 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
               return (
                 <li key={id}>
                   <span>{icon}</span>
-                  <a href={url} className="link" onClick={toggleSidebar}>
+                  <Link
+                    to={url}
+                    spy={true}
+                    smooth={true}
+                    offset={10}
+                    duration={500}
+                    onClick={toggleSidebar}
+                    className="link">
                     {text}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -139,6 +147,7 @@ const Wrapper = styled.div`
     text-decoration: none;
     color: #000;
     font-size: 1.5em;
+    cursor: pointer;
     &:hover {
       color: #2c277f;
     }

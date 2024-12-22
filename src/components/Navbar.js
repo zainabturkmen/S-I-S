@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 import CV from "../assets/Sadat_CV.pdf";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { links } from "./data";
@@ -14,9 +15,15 @@ const Navbar = ({ toggleSidebar }) => {
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <a href={url} className="link">
+                <Link
+                  to={url}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
+                  className="link">
                   {text}
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -60,10 +67,11 @@ const Wrapper = styled.div`
     list-style: none;
   }
 
-  a {
+  .link {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
+    cursor: pointer;
     &:hover {
       border-bottom: 2px solid #4f46e5;
       color: #4f46e5;
@@ -109,7 +117,7 @@ const Wrapper = styled.div`
       font-size: 1.5em;
     }
 
-    a {
+    .link {
       font-size: 1em;
     }
 

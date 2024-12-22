@@ -86,7 +86,7 @@ const Contact = () => {
 };
 
 const Wrapper = styled.div`
-  margin-top: 2em;
+  margin: 2em 0;
   h1 {
     color: #0b0c0c;
     text-align: center;
@@ -198,7 +198,7 @@ const Wrapper = styled.div`
     padding: 0 1em;
   }
   textarea {
-    height: 140px;
+    height: 146px;
     border-radius: 8px;
     border: 1px solid rgba(238, 238, 238, 0.93);
     background: var(--Light-Base-Color-White, #fff);
@@ -222,7 +222,11 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 1150px) {
+    p {
+      width: 651.153px;
+      margin-top: .2em;
+    }
     form {
       margin-top: 2em;
     }
@@ -230,6 +234,9 @@ const Wrapper = styled.div`
     textarea,
     button {
       width: 700px;
+    }
+    button {
+      width: 725px;
     }
 
     .main-container {

@@ -51,7 +51,7 @@ const Hero = () => {
         </div>
         <div className="bottom">
           <div className="img-container">
-            // eslint-disable-next-line
+            {/* // eslint-disable-next-line */}
             <img src={image} alt="i" />
           </div>
           <div className="follow">

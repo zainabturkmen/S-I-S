@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CV from "../assets/Sadat_CV.pdf";
 import { BiMenuAltLeft } from "react-icons/bi";
+import { links } from "./data";
 
 const Navbar = ({ toggleSidebar }) => {
+  const [active, setActive] = useState("#home");
+
+  const handleNavClick = (id) => {
+    setActive(`#${id}`);
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Wrapper>
       <nav>
         <h1>Sayed Irfan</h1>
         <ul>
-          <li>
+          {links.map((link) => {
+            const { id, text, url } = link;
+            return (
+              <li key={id}>
+                <a
+                  href={url}
+                  // className="link"
+                  className={active === "#home" ? "active" : ""}
+                  onClick={() => handleNavClick("home")}>
+                  {text}
+                </a>
+              </li>
+            );
+          })}
+          {/* <li>
             <a href="#home">Home</a>
           </li>
           <li>
@@ -26,7 +48,7 @@ const Navbar = ({ toggleSidebar }) => {
           </li>
           <li>
             <a href="#contact">Contact</a>
-          </li>
+          </li> */}
         </ul>
         <div className="btn-container">
           <a download="Sayed Irfan Sadat CV" href={CV} className="cv">
@@ -47,6 +69,13 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff; /* Set background color to white */
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
   }
 
   button {

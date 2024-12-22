@@ -87,7 +87,8 @@ const Hero = () => {
 };
 
 const Wrapper = styled.div`
-  margin: 2em 0;
+margin-top: 8em;
+margin-bottom: 2em;
 
   .top {
     display: flex;

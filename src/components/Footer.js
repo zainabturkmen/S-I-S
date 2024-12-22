@@ -16,13 +16,13 @@ const Footer = () => {
             <p>&copy; {currentYear}. All Rights Reserved</p>
           </div>
           <ul className="links">
-            <a href="https://www.facebook.com" className="social">
+            <a href="https://www.facebook.com">
               <GrFacebookOption />
             </a>
-            <a href="https://www.x.com" className="social">
+            <a href="https://www.x.com">
               <FaTwitter />
             </a>
-            <a href="https://www.linkedin.com" className="social">
+            <a href="https://www.linkedin.com">
               <TfiLinkedin />
             </a>
           </ul>
@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     gap: 1.5em;
 
-    .social {
+    a {
       background-color: #2c277f;
       color: white;
       padding: 0.45em 0.5em 0em 0.5em;
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1150px) {
-    .social {
+    a {
       padding: 2em;
       font-size: 1em;
       border-radius: 3em;

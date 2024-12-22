@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import { MdOutlineCall } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <Wrapper id="contact">
       <div>
@@ -46,6 +67,17 @@ const Contact = () => {
                 <h4>Kabul, Afghanistan</h4>
               </div>
             </div>
+          </div>
+          <div className="bottom">
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form>
           </div>
         </div>
       </div>
@@ -96,8 +128,8 @@ const Wrapper = styled.div`
 
   .main-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 

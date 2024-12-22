@@ -9,6 +9,7 @@ import {
   Projects,
   Testimonails,
   Contact,
+  Footer,
 } from "./components";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-  };
+  }
+
   return (
     <>
       <Navbar toggleSidebar={toggleSidebar} />
@@ -27,6 +29,7 @@ function App() {
       <Projects />
       <Testimonails />
       <Contact />
+      <Footer />
     </>
   );
 }

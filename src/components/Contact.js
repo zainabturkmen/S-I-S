@@ -131,6 +131,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 2em;
+    margin: 1em;
   }
 
   .top {
@@ -148,11 +149,11 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1.5em;
     width: 290px;
-    height: 96.2px;
+    height: 90px;
     border-radius: 8px;
     background: var(--Light-Base-Color-White, #fff);
     filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.2));
-    padding: 0.5em 2em;
+    padding: 0.5em 1.3em;
   }
 
   .icon {
@@ -242,6 +243,11 @@ const Wrapper = styled.div`
     .main-container {
       display: flex;
       flex-direction: row;
+    }
+
+    .content-container {
+      /* width: 390px; */
+      height: 96px;
     }
   }
 `;

@@ -34,7 +34,7 @@ const Footer = () => {
 
 const Wrapper = styled.div`
   .footer {
-    margin-bottom: -0.8em;
+    margin: 1em;
   }
   .main-footer {
     display: flex;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   }
 
   p {
-    font-size: 0.6em;
+    font-size: 0.5em;
     font-weight: 400;
     padding-top: 0.8em;
   }

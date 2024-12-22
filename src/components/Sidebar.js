@@ -61,6 +61,7 @@ const Wrapper = styled.div`
   aside {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   .sidebar {
     position: fixed;

@@ -40,7 +40,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* padding: 5px 0; */
+    padding: 5px 0;
   }
 
   button {

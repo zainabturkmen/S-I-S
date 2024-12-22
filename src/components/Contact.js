@@ -147,7 +147,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1.5em;
-    width: 340px;
+    width: 290px;
     height: 96.2px;
     border-radius: 8px;
     background: var(--Light-Base-Color-White, #fff);
@@ -175,9 +175,9 @@ const Wrapper = styled.div`
   h4 {
     color: #11142d;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 18px; /* 112.5% */
+    line-height: 16px; /* 112.5% */
     letter-spacing: 0.08px;
     margin-top: 0;
   }
@@ -191,7 +191,7 @@ const Wrapper = styled.div`
   }
 
   input {
-    width: 365px;
+    width: 300px;
     height: 50px;
     border: 1px solid rgba(238, 238, 238, 0.93);
     border-radius: 8px;
@@ -225,7 +225,7 @@ const Wrapper = styled.div`
   @media (min-width: 1150px) {
     p {
       width: 651.153px;
-      margin-top: .2em;
+      margin-top: 0.2em;
     }
     form {
       margin-top: 2em;

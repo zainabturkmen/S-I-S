@@ -64,6 +64,8 @@ const Wrapper = styled.div`
       border-radius: 3em;
     }
   }
+
+
 `;
 
 export default Footer;

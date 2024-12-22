@@ -42,7 +42,6 @@ const Wrapper = styled.div`
     justify-content: space-between;
     margin: 0 2.5em;
     align-items: center;
-    padding-bottom: 0.5em;
   }
 
   p {
@@ -65,7 +64,17 @@ const Wrapper = styled.div`
     }
   }
 
+  @media (min-width: 1150px) {
+    .social {
+      padding: 2em;
+      font-size: 1em;
+      border-radius: 3em;
+    }
 
+    p {
+      font-size: 1em;
+    }
+  }
 `;
 
 export default Footer;

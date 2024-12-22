@@ -1,17 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import CV from "../assets/Sadat_CV.pdf";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { links } from "./data";
 
 const Navbar = ({ toggleSidebar }) => {
-  const [active, setActive] = useState("#home");
-
-  const handleNavClick = (id) => {
-    setActive(`#${id}`);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <Wrapper>
       <nav>
@@ -21,11 +14,7 @@ const Navbar = ({ toggleSidebar }) => {
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <a
-                  href={url}
-                  // className="link"
-                  className={active === "#home" ? "active" : ""}
-                  onClick={() => handleNavClick("home")}>
+                <a href={url} className="link">
                   {text}
                 </a>
               </li>

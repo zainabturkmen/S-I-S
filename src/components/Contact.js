@@ -70,10 +70,12 @@ const Contact = () => {
           </div>
           <div className="bottom">
             <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name="user_name" placeholder="Full Name"/>
-              <input type="email" name="user_email" placeholder="Email"/>
-              <textarea name="message" placeholder="Message"/>
-              <input type="submit" value="Send" />
+              <input type="text" name="user_name" placeholder="Full Name" />
+              <input type="email" name="user_email" placeholder="Email" />
+              <textarea name="message" placeholder="Message" />
+              <button type="submit" value="Send">
+                submit
+              </button>
             </form>
           </div>
         </div>
@@ -125,9 +127,10 @@ const Wrapper = styled.div`
 
   .main-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2em;
   }
 
   .top {
@@ -144,7 +147,7 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1.5em;
-    width: 360px;
+    width: 340px;
     height: 96.2px;
     border-radius: 8px;
     background: var(--Light-Base-Color-White, #fff);
@@ -179,10 +182,60 @@ const Wrapper = styled.div`
     margin-top: 0;
   }
 
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  input {
+    width: 365px;
+    height: 50px;
+    border: 1px solid rgba(238, 238, 238, 0.93);
+    border-radius: 8px;
+    padding: 0 1em;
+  }
+  textarea {
+    height: 140px;
+    border-radius: 8px;
+    border: 1px solid rgba(238, 238, 238, 0.93);
+    background: var(--Light-Base-Color-White, #fff);
+    padding: 1em;
+  }
+
+  button {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #4f46e5;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.2em;
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(79, 70, 229, 0.8) 0%,
+        #2c277f 100%
+      );
+      color: #fff;
+    }
+  }
+
+  @media (min-width: 500px) {
+    form {
+      margin-top: 2em;
+    }
+    input,
+    textarea,
+    button {
+      width: 700px;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+    }
   }
 `;
 

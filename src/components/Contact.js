@@ -114,7 +114,7 @@ const Wrapper = styled.div`
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    width: 368.011px;
+    width: 300px;
     height: 56px;
     margin: 0 auto;
   }
@@ -159,7 +159,7 @@ const Wrapper = styled.div`
   .icon {
     background-color: red;
     align-items: center;
-    padding: 0.7em 0.8em 0.3em 0.8em;
+    padding: 0.4em 0.6em 0.1em 0.6em;
     font-size: 1.7em;
     border-radius: 0.6em;
     background: linear-gradient(90deg, rgba(79, 70, 229, 0.8) 0%, #2c277f 100%);
@@ -180,7 +180,7 @@ const Wrapper = styled.div`
     font-weight: 500;
     line-height: 16px; /* 112.5% */
     letter-spacing: 0.08px;
-    margin-top: 0;
+    margin-top: -.1em;
   }
 
   form {
@@ -248,6 +248,12 @@ const Wrapper = styled.div`
     .content-container {
       /* width: 390px; */
       height: 96px;
+    }
+
+    .icon {
+  
+      padding: 0.7em 0.8em 0.3em 0.8em;
+   
     }
   }
 `;

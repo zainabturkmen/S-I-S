@@ -13,8 +13,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_8oge1eg", "template_v51r6d8", form.current, {
+        publicKey: "KcKqL1RafLSvF2VkT",
       })
       .then(
         () => {
@@ -70,8 +70,8 @@ const Contact = () => {
           </div>
           <div className="bottom">
             <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name="user_name" placeholder="Full Name" />
-              <input type="email" name="user_email" placeholder="Email" />
+              <input type="text" name="from_name" placeholder="Full Name" />
+              <input type="email" name="from_email" placeholder="Email" />
               <textarea name="message" placeholder="Message" />
               <button type="submit" value="Send">
                 submit
@@ -180,7 +180,7 @@ const Wrapper = styled.div`
     font-weight: 500;
     line-height: 16px; /* 112.5% */
     letter-spacing: 0.08px;
-    margin-top: -.1em;
+    margin-top: -0.1em;
   }
 
   form {
@@ -251,9 +251,7 @@ const Wrapper = styled.div`
     }
 
     .icon {
-  
       padding: 0.7em 0.8em 0.3em 0.8em;
-   
     }
   }
 `;

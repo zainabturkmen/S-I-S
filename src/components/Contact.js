@@ -19,6 +19,7 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -32,7 +33,8 @@ const Contact = () => {
         <div className="title">
           <h1>
             Let’s Discuss Your <span>Project</span>
-          </h1>
+          </h1>{" "}
+          Local: http://localhost:3000
           <p>
             Let’s make something new, different and more meaningful or make
             thing more visual or conceptual

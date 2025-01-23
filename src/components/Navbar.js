@@ -5,11 +5,14 @@ import CV from "../assets/Sadat_CV.pdf";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { links } from "./data";
 
+import logo from "../assets/logo.svg";
+
 const Navbar = ({ toggleSidebar }) => {
   return (
     <Wrapper>
       <nav>
-        <h1>Sayed Irfan</h1>
+        {/* <h1>Sayed Irfan</h1> */}
+        <img src={logo} alt="logo" className="logo" />
         <ul>
           {links.map((link) => {
             const { id, text, url } = link;
@@ -21,7 +24,8 @@ const Navbar = ({ toggleSidebar }) => {
                   smooth={true}
                   offset={0}
                   duration={500}
-                  className="link">
+                  className="link"
+                >
                   {text}
                 </Link>
               </li>
@@ -53,6 +57,10 @@ const Wrapper = styled.div`
   button {
     display: none;
     cursor: pointer;
+  }
+
+  .logo {
+    width: 5em;
   }
 
   ul {
@@ -122,6 +130,7 @@ const Wrapper = styled.div`
       font-size: 1.5em;
     }
 
+    
     .link {
       font-size: 1em;
     }
@@ -144,6 +153,10 @@ const Wrapper = styled.div`
 
     h1 {
       font-size: 2em;
+    }
+
+    .logo {
+      width: 4em;
     }
 
     .btn-container {

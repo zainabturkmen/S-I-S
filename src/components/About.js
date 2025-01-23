@@ -220,13 +220,16 @@ const Wrapper = styled.div`
     }
 
     .number {
-      margin-right: -0.2em;
+      margin-right: -11em;
     }
     .number2 {
-      margin-right: 1em;
+      margin-right: -10em;
+    }
+    .number3 {
+      margin-right: -11em;
     }
     .number4 {
-      margin-right: 1.5em;
+      margin-right: -10em;
     }
   }
 `;

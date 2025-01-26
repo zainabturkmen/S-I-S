@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
-import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,13 +16,13 @@ const Footer = () => {
             <p>&copy; {currentYear}. All Rights Reserved</p>
           </div>
           <ul className="links">
-            <a href="https://www.facebook.com">
+            <a href="https://www.facebook.com/share/15tzARYMJG/?mibextid=wwXIfr">
               <GrFacebookOption />
             </a>
-            <a href="https://www.x.com">
-              <FaTwitter />
+            <a href="https://www.instagram.com/sayedirfan.sadat?igsh=a3l1czV1cjdlNnln&utm_source=qr">
+              <FaInstagram />
             </a>
-            <a href="https://www.linkedin.com">
+            <a href="https://www.linkedin.com/in/sayed-irfan-sadat-335890310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
               <TfiLinkedin />
             </a>
           </ul>
@@ -58,7 +58,7 @@ const Wrapper = styled.div`
     a {
       background-color: #2c277f;
       color: white;
-      padding: 0.5em 0.6em .15em 0.6em;
+      padding: 0.5em 0.6em 0.15em 0.6em;
       font-size: 0.6em;
       border-radius: 3em;
     }
@@ -75,6 +75,6 @@ const Wrapper = styled.div`
       font-size: 1em;
     }
   }
-`;  
+`;
 
 export default Footer;

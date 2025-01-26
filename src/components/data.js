@@ -35,8 +35,6 @@ import TGL from "../assets/experience/TGL.WEBP";
 import FOREX from "../assets/experience/fOREX.JPG";
 import Ayenda from "../assets/experience/Ayenda.svg";
 
-
-
 export const links = [
   {
     id: 1,
@@ -193,7 +191,7 @@ export const testimonails = [
   {
     id: 8,
     company: "Ayenda Consulting 2025",
-    text: "As a Creative Graphic Designer at Misgaran, I specialized in crafting innovative visual solutions for branding and marketing initiatives. I collaborated closely with teams to ensure designs aligned with strategic goals.",
+    text: "As the founder and graphic designer of Ayendah Consultancy, I lead the creation of innovative and impactful designs that represent our vision, delivering tailored solutions to effectively communicate ideas and drive success for our clients.",
     user: Ayenda,
     name: "AYENDA",
     position: "CREATIVE GRAPHIC DESIGNER",
@@ -201,7 +199,7 @@ export const testimonails = [
   {
     id: 9,
     company: "QAMAR FOUNDATION",
-    text: "As a Creative Graphic Designer at Misgaran, I specialized in crafting innovative visual solutions for branding and marketing initiatives. I collaborated closely with teams to ensure designs aligned with strategic goals.",
+    text: "As a graphic designer at Qamar Foundation, I create impactful visuals that align with the foundation’s mission, enhancing its identity and inspiring positive change through creative designs for digital and print platforms.",
     user: Q,
     name: "Qamar",
     position: "CREATIVE GRAPHIC DESIGNER",

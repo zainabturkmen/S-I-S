@@ -4,7 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import image from "../assets/image.png";
 import { GrFacebookOption } from "react-icons/gr";
 import { TfiLinkedin } from "react-icons/tfi";
-import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { services } from "./data";
 
@@ -28,7 +28,8 @@ const Hero = () => {
           <h1>
             I’am Sayed Irfan Sadat <br /> <span>{typeEffect}</span>
             <span
-              style={{ fontSize: ".8em", color: "black", fontWeight: "300" }}>
+              style={{ fontSize: ".8em", color: "black", fontWeight: "300" }}
+            >
               <Cursor />
             </span>
           </h1>
@@ -58,13 +59,22 @@ const Hero = () => {
             <p className="p">Follow me on: </p>
             {/* <div className="line"></div> */}
             <ul className="links">
-              <a href="https://www.facebook.com" className="social">
+              <a
+                href="https://www.facebook.com/share/15tzARYMJG/?mibextid=wwXIfr"
+                className="social"
+              >
                 <GrFacebookOption />
               </a>
-              <a href="https://www.x.com" className="social">
-                <FaTwitter />
+              <a
+                href="https://www.instagram.com/sayedirfan.sadat?igsh=a3l1czV1cjdlNnln&utm_source=qr"
+                className="social"
+              >
+                <FaInstagram />
               </a>
-              <a href="https://www.linkedin.com" className="social">
+              <a
+                href="https://www.linkedin.com/in/sayed-irfan-sadat-335890310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                className="social"
+              >
                 <TfiLinkedin />
               </a>
             </ul>
@@ -87,7 +97,7 @@ const Hero = () => {
 };
 
 const Wrapper = styled.div`
-margin-top: 2em 0;
+  margin-top: 2em 0;
 
   .top {
     display: flex;
@@ -212,7 +222,7 @@ margin-top: 2em 0;
     position: absolute;
     width: 260px;
     top: 5.9em;
-    left: .5em;
+    left: 0.5em;
     height: 73%;
     border-radius: 2px;
     border: 5px solid var(--Primary-Color, #4f46e5);

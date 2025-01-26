@@ -84,7 +84,6 @@ const Wrapper = styled.div`
   }
   img {
     width: 5em;
-    border-radius: 10em;
   }
 
   h3 {

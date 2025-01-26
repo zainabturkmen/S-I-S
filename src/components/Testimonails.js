@@ -6,15 +6,15 @@ import Marquee from "react-fast-marquee";
 const Testimonails = () => {
   return (
     <Wrapper id="testimonails">
-      <h1>Testimonails</h1>
+      <h1>Experience</h1>
       <div className="main-container">
         <Marquee className="marquee" pauseOnHover speed={50} loop={0}>
           {testimonails.map((testimonail) => {
-            const { id, star, text, user, name, position } = testimonail;
+            const { id, company, text, user, name, position } = testimonail;
             return (
               <div className="container" key={id}>
                 <div className="customer">
-                  <img src={star} alt="stars"/>
+                  <h2>{company}</h2>
                   <p className="reveiew">{text}</p>
                   <div className="user">
                     <img src={user} alt="user" />
@@ -41,6 +41,10 @@ const Wrapper = styled.div`
     margin-top: 2em;
   }
 
+  h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
   .main-container {
     display: flex;
     flex-direction: row;
@@ -49,23 +53,27 @@ const Wrapper = styled.div`
   }
 
   .container {
-    width: 185px;
-    height: 260px;
+    width: 250px;
+    height: 340px;
     border-radius: 8px;
     background-color: red;
-    padding: 2em;
+    padding: 1em 2em;
     background: var(--Light-Base-Color-White, #fff);
     filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
     margin: 1em;
   }
 
+  .marquee{
+    height: 600px;
+  } 
+  
   .reveiew {
     color: #11142d;
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
     line-height: 140%;
-    width: 200px;
+    width: 260px;
   }
 
   .user {
@@ -73,6 +81,10 @@ const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 1em;
+  }
+  img {
+    width: 5em;
+    border-radius: 10em;
   }
 
   h3 {
@@ -114,9 +126,8 @@ const Wrapper = styled.div`
 
     .container {
       width: 400px;
-      height: 177px;
+      height: 257px;
       border-radius: 8px;
-      background-color: red;
       padding: 2em;
       background: var(--Light-Base-Color-White, #fff);
       filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));

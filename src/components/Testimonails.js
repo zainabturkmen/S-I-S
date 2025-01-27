@@ -64,7 +64,7 @@ const Wrapper = styled.div`
   }
 
   .marquee {
-    height: 600px;
+    height: 450px;
   }
 
   .reveiew {

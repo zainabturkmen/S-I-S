@@ -21,6 +21,12 @@ import image6 from "../assets/Projects/img6.jpg";
 import image7 from "../assets/Projects/img7.jpg";
 import image8 from "../assets/Projects/img8.jpg";
 import image9 from "../assets/Projects/img9.jpg";
+import image10 from "../assets/Projects/img10.jpg";
+import image11 from "../assets/Projects/img11.jpg";
+import image12 from "../assets/Projects/img12.jpg";
+import image13 from "../assets/Projects/img13.jpg";
+import image14 from "../assets/Projects/img14.jpg";
+import image15 from "../assets/Projects/img15.jpg";
 
 //
 
@@ -224,4 +230,10 @@ export {
   image7,
   image8,
   image9,
+  image10,
+  image11,
+  image12,
+  image13,
+  image14,
+  image15,
 };

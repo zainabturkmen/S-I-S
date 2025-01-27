@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Testimonails = () => {
   return (
-    <Wrapper id="testimonails">
+    <Wrapper id="experience">
       <h1>Experience</h1>
       <div className="main-container">
         <Marquee className="marquee" pauseOnHover speed={50} loop={0}>
@@ -63,10 +63,10 @@ const Wrapper = styled.div`
     margin: 1em;
   }
 
-  .marquee{
+  .marquee {
     height: 600px;
-  } 
-  
+  }
+
   .reveiew {
     color: #11142d;
     font-family: Inter;

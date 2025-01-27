@@ -12,15 +12,15 @@ import { MdAutoAwesomeMotion } from "react-icons/md";
 import { PiGooglePhotosLogoLight } from "react-icons/pi";
 import { PiVideoLight } from "react-icons/pi";
 
-import image1 from "../assets/Image (1).png";
-import image2 from "../assets/Image (2).png";
-import image3 from "../assets/Image (3).png";
-import image4 from "../assets/Image (4).png";
-import image5 from "../assets/Image (5).png";
-import image6 from "../assets/Image (6).png";
-import image7 from "../assets/Image (7).png";
-import image8 from "../assets/Image (8).png";
-import image9 from "../assets/Image (9).png";
+import image1 from "../assets/Projects/img1.jpg";
+import image2 from "../assets/Projects/img2.jpg";
+import image3 from "../assets/Projects/img3.jpg";
+import image4 from "../assets/Projects/img4.jpg";
+import image5 from "../assets/Projects/img5.jpg";
+import image6 from "../assets/Projects/img6.jpg";
+import image7 from "../assets/Projects/img7.jpg";
+import image8 from "../assets/Projects/img8.jpg";
+import image9 from "../assets/Projects/img9.jpg";
 
 //
 
@@ -62,8 +62,8 @@ export const links = [
   },
   {
     id: 5,
-    text: "Testimonails",
-    url: "testimonails",
+    text: "Experience",
+    url: "experience",
     icon: <BiCommentCheck />,
   },
   {

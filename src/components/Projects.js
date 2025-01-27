@@ -14,13 +14,13 @@ import {
 
 const images = [
   image1,
-  image2,
   image3,
+  image2,
   image4,
   image5,
-  image6,
   image7,
   image8,
+  image6,
   image9,
 ];
 
@@ -46,6 +46,7 @@ const Wrapper = styled.div`
     width: 300px;
     height: 220px;
     flex-shrink: 0;
+    object-fit: cover;
     border-radius: 8px;
   }
   .img-container {

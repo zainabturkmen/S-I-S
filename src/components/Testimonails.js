@@ -112,6 +112,9 @@ const Wrapper = styled.div`
       max-width: 1250px;
       margin: 0 auto;
     }
+    .marquee {
+      height: 400px;
+    }
 
     h1 {
       text-align: center;

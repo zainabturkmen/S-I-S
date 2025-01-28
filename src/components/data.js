@@ -28,6 +28,19 @@ import image13 from "../assets/Projects/img13.jpg";
 import image14 from "../assets/Projects/img14.jpg";
 import image15 from "../assets/Projects/img15.jpg";
 
+import image16 from "../assets/Projects/img16.jpg";
+import image17 from "../assets/Projects/img17.jpg";
+import image18 from "../assets/Projects/img18.jpg";
+import image19 from "../assets/Projects/img19.jpg";
+import image20 from "../assets/Projects/img21.jpg";
+import image21 from "../assets/Projects/img22.jpg";
+import image22 from "../assets/Projects/img15.jpg";
+import image23 from "../assets/Projects/img23.jpg";
+import image24 from "../assets/Projects/img24.jpg";
+import image25 from "../assets/Projects/img25.jpg";
+import image26 from "../assets/Projects/img26.jpg";
+import image27 from "../assets/Projects/img27.jpg";
+
 //
 
 import PGL from "../assets/experience/PGL.PNG";
@@ -236,4 +249,16 @@ export {
   image13,
   image14,
   image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+  image25,
+  image26,
+  image27,
 };

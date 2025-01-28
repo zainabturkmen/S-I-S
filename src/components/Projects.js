@@ -16,6 +16,18 @@ import {
   image13,
   image14,
   image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+  image25,
+  image26,
+  image27,
 } from "../components/data";
 
 const images = [
@@ -34,6 +46,18 @@ const images = [
   image13,
   image14,
   image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+  image25,
+  image26,
+  image27,
 ];
 
 const Projects = () => {

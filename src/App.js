@@ -7,6 +7,7 @@ import {
   About,
   Services,
   Projects,
+  Video,
   Testimonails,
   Contact,
   Footer,
@@ -17,7 +18,7 @@ function App() {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
-  }
+  };
 
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Video />
       <Testimonails />
       <Contact />
       <Footer />

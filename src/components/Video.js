@@ -1,5 +1,8 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import styled from "styled-components";
+import catVideo from "../assets/video/cat_video.mp4";
+import speach from "../assets/video/speech.mp4";
 
 const Video = () => {
   return (
@@ -36,9 +39,9 @@ const Wrapper = styled.div`
   }
 
   h1 {
-    font-size: 1.875rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
     text-align: center;
     width: 100%;
     white-space: nowrap;
@@ -72,6 +75,7 @@ const Wrapper = styled.div`
 
       h2 {
         font-size: 1.25rem;
+        font-weight: 400;
         margin-bottom: 0.5rem;
 
         @media (min-width: 768px) {

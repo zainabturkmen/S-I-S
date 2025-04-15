@@ -1,8 +1,8 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
-import catVideo from "../assets/video/cat_video.mp4";
-import speach from "../assets/video/speech.mp4";
+import Video1 from "../assets/video/Video1.mp4";
+import Video2 from "../assets/video/Video2.mp4";
 
 const Video = () => {
   return (
@@ -11,16 +11,16 @@ const Video = () => {
 
       <div className="video-grid">
         <div className="video-card">
-          <h2>Cute Cat Video</h2>
+          <h2>Inspiring Speech</h2>
           <div className="player-wrapper">
-            <ReactPlayer url={catVideo} controls width="100%" height="350px" />
+            <ReactPlayer url={Video1} controls width="100%" height="350px" />
           </div>
         </div>
 
         <div className="video-card">
-          <h2>Inspiring Speech</h2>
+          <h2>Personal Brand</h2>
           <div className="player-wrapper">
-            <ReactPlayer url={speach} controls width="100%" height="350px" />
+            <ReactPlayer url={Video2} controls width="100%" height="350px" />
           </div>
         </div>
       </div>

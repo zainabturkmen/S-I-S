@@ -4,9 +4,11 @@ import Hero from "./Hero";
 import About from "./About";
 import Services from "./Services";
 import Projects from "./Projects";
+import Video from "./Video";
 import Testimonails from "./Testimonails";
 import Contact from "./Contact";
 import Footer from "./Footer";
+
 
 export {
   Navbar,
@@ -15,6 +17,7 @@ export {
   About,
   Services,
   Projects,
+  Video,
   Testimonails,
   Contact,
   Footer,

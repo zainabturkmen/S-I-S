@@ -50,7 +50,7 @@ const Wrapper = styled.div`
 
   .main-footer {
     display: flex;
-    flex-direction: column; /* Stack vertically by default */
+    flex-direction: column-reverse; /* reverse order on mobile */
     justify-content: center;
     align-items: center;
     margin: 1em 2.5em;
@@ -100,7 +100,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 768px) {
     .main-footer {
-      flex-direction: row;
+      flex-direction: row; /* restore normal order on desktop */
       justify-content: space-between;
       text-align: left;
     }
@@ -115,6 +115,7 @@ const Wrapper = styled.div`
     }
   }
 `;
+
 
 export default Footer;
 

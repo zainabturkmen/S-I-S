@@ -119,3 +119,4 @@ const Wrapper = styled.div`
 
 export default Footer;
 
+  
